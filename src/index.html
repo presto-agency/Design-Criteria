@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Design Criteria | Home</title>
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="#ffffff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+	
+	<link rel="preload" href="fonts/TimesNewRoman-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/TimesNewRoman.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/SuisseIntl-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<main class="wrapper" id="wrapper">
+	@@include('html/components/header.html', {})
+	<div data-router-wrapper>
+		<div data-router-view="default">
+			@@include('html/home/hero.html', {})
+			@@include('html/home/innovating.html', {})
+			@@include('html/home/solution.html', {})
+			@@include('html/home/advantages.html', {})
+			@@include('html/home/service.html', {})
+			@@include('html/home/blog.html', {})
+			@@include('html/home/contact.html', {})
+		</div>
+	</div>
+	@@include('html/components/footer.html', {})
+	@@include('html/components/modal-contact.html', {})
+	@@include('html/components/modal-thanks.html', {})
+</main>
+<script src="js/app.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({});
+</script>
+</body>
+</html>

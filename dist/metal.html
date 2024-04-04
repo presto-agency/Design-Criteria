@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Design Criteria | Magnetics</title>
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="#ffffff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+	
+	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="wrapper" id="wrapper">
+	<header class="header" id="header">
+  <div class="header-panel">
+	  <div class="header-panel-logo">
+		  <a href="/" class="logo">
+			  <img src="../../img/logo.svg" alt="Design Criteria"/>
+		  </a>
+	  </div>
+	  <div class="header-panel-nav">
+		  <nav>
+			  <ul>
+				  <li><a href="index.html#about" class="scroll-action" >About Us</a></li>
+				  <li class="menu-item-has-children">
+					  <a>Products</a>
+					  <ul class="sub-menu">
+						  <li>
+							  <a href="power-supplies.html">
+								  <span class="sub-item-image">
+								  	<img src="../img/home/sub-item-1.png" alt="media">
+								  </span>
+								  <span class="sub-item-title">Power Supplies</span>
+								  <span class="sub-item-text">Design Criteria, Inc. is the only manufacture of exclusive, SMART power supplies for demanding applications.</span>
+							  </a>
+						  </li>
+						  <li>
+							  <a href="magnetics.html">
+							  <span class="sub-item-image">
+						  		<img src="../img/home/sub-item-2.png" alt="media">
+							  </span>
+							  <span class="sub-item-title">Magnetics</span>
+							  <span class="sub-item-text">Design Criteria, Inc. pioneers diverse switching power supply components.</span>
+							  </a>
+						  </li>
+						  <li>
+							  <a href="iot-remote.html">
+							  <span class="sub-item-image">
+							  	<img src="../img/home/sub-item-3.png" alt="media">
+							  </span>
+							  <span class="sub-item-title">IoT Remote Sensors</span>
+							  <span class="sub-item-text">We design and manufacture remote sensors for IoT applications for smart homes and smart businesses.</span>
+							  </a>
+						  </li>
+					  </ul>
+				  </li>
+				  <li><a href="metal.html">MM Pro</a></li>
+				  <li><a href="blog.html">Blog</a></li>
+			  </ul>
+		  </nav>
+		  <button type="button" class="header-panel-search">
+			  <img src="../img/icons/search.svg" alt="search">
+		  </button>
+		  <button type="button" class="btn btn-primary" data-modal-open="#contact-modal">
+			  contact us
+		  </button>
+		  <button class="burger header-panel-burger"><span></span></button>
+	  </div>
+  </div>
+	<div class="header-panel-overlay"></div>
+	<div class="header-search">
+		<div class="container">
+			<div class="header-search-form">
+				<form>
+					<label>
+						<input type="text" placeholder="Search" class="search-field">
+					</label>
+				</form>
+			</div>
+			<div class="header-search-result">
+				<ul>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+	<div data-router-wrapper>
+		<div data-router-view="default">
+			<section class="section hero hero-metal">
+<div class="container">
+    <div class="hero-top">
+        <h1 class="hero-title h1" data-load-order="2">Metal Marshmallow</h1>
+        <div class="hero-nav" data-load-order="2">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev"><img src="../../img/icons/Prev.svg" alt="Prev"></button>
+                <button class="splide__arrow splide__arrow--next"><img src="../../img/icons/Next.svg" alt="Next"></button>
+            </div>
+        </div>
+    </div>
+    <div class="hero-slider-inner" data-load-order="3">
+        <div class="hero-slider splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="hero-slide">
+                        <div class="hero-slider-desc">
+                            <div class="hero-slider-text">
+                                <h6>Can you hear that?</h6>
+                                <h2>Metal Marshmallow Pro</h2>
+                                <p>The most advanced contact mic to date.</p>
+                                <p>The Metal Marshmallow Pro II has the capability to adjust the gain from 0 to 34 dB, is +48V phantom powered, and is available in a compact, portable size making it easier to transport.</p>
+                            </div>
+                            <div class="hero-slider-link">
+                                <a href="#" class="btn btn-secondary">Buy Metal Marshmallow Pro</a>
+                            </div>
+                        </div>
+                        <div class="hero-slider-media hero-media-half">
+                            <div class="hero-media-image">
+                                <picture>
+                                    <source srcset="../../img/home/hero-slider-1.png" type="image/png">
+                                    <source srcset="../../img/home/hero-slider-1.webp" type="image/webp">
+                                    <img src="../../img/home/hero-slider-1.png">
+                                </picture>
+                            </div>
+                            <div class="hero-media-image">
+                                <picture>
+                                    <source srcset="../../img/home/hero-slider-2.png" type="image/png">
+                                    <source srcset="../../img/home/hero-slider-2.webp" type="image/webp">
+                                    <img src="../../img/home/hero-slider-2.png">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="splide__slide">
+                    <div class="hero-slide">
+                        <div class="hero-slider-desc">
+                            <div class="hero-slider-text">
+                                <h6>Can you hear that?</h6>
+                                <h2>Metal Marshmallow Contact Mic</h2>
+                                <p>Metal Marshmallows are specifically designed to pick up sound waves traveling through solid objects.</p>
+                                <p>It has a wide-range of applications from audio amplification t scientific studies.</p>
+                                <p>There are currently five variations of Metal Marshmallows on the market including Marshmallow Pro and Marshmallow II</p>
+                            </div>
+                        </div>
+                        <div class="hero-slider-media">
+                            <div class="hero-media-image">
+                                <picture>
+                                    <source srcset="../../img/home/hero-slider-3.png" type="image/png">
+                                    <source srcset="../../img/home/hero-slider-3.webp" type="image/webp">
+                                    <img src="../../img/home/hero-slider-3.png">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="splide__slide">
+                    <div class="hero-slide">
+                        <div class="hero-slider-desc">
+                            <div class="hero-slider-text">
+                                <h6>Can you hear that?</h6>
+                                <h2>Metal Marshmallow Capabillities</h2>
+                                <p>With this unique design the possibilities are endless. Marshmallows can pick up minute sounds that are impossible for the human ear to discern.</p>
+                                <p>This video demonstrates how Metal Marshamllows can be used to pick up the sound of snow falling on glass.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slider-media hero-video">
+                            <iframe src="https://www.youtube.com/embed/yiPKaSKfk10?feature=oembed"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+			<section class="section info">
+    <div class="container">
+        <div class="info-wrap">
+            <div class="info-media" data-aos="fade-up">
+                <div class="info-image">
+                    <picture>
+                        <source srcset="../../img/home/info-image.png" type="image/png">
+                        <source srcset="../../img/home/info-image.webp" type="image/webp">
+                        <img src="../../img/home/info-image.png">
+                    </picture>
+                </div>
+            </div>
+            <div class="info-desc" data-aos="fade-up">
+                <h2>
+                    Explore the Depths of Sound
+                </h2>
+                <p>
+                    Dive into the extraordinary world of Metal Marshmallow Contact Mics, where innovation meets sonic exploration. Our cutting-edge contact microphones redefine how you experience sound, turning ordinary into extraordinary.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+			<section class="section why">
+    <div class="container">
+        <div class="title-section" data-aos="fade-up">
+            <h2>Why Metal Marshmallow?</h2>
+        </div>
+        <div class="why-wrap">
+            <div class="why-item" data-aos="fade-up" >
+                <div class="why-item-media" data-aos="fade-up">
+                    <div class="why-item-image">
+                        <img src="../../img/home/why-1.svg" alt="why">
+                    </div>
+
+                </div>
+                <div class="why-item-title" data-aos="fade-up">Unparalleled Sensitivity</div>
+                <div class="why-item-text" data-aos="fade-up">
+                    Experience the nuances of sound like never before. Metal Marshmallow's advanced technology captures the subtlest vibrations, revealing a hidden sonic universe.
+                </div>
+            </div>
+            <div class="why-item" data-aos="fade-up">
+                <div class="why-item-media" data-aos="fade-up">
+                    <div class="why-item-image">
+                        <img src="../../img/home/why-2.svg" alt="why">
+                    </div>
+                </div>
+                <div class="why-item-title" data-aos="fade-up">Versatility Redefined</div>
+                <div class="why-item-text" data-aos="fade-up">
+                    Transform any surface into an instrument. From everyday objects to unconventional materials, Metal Marshmallow empowers you to explore and create a symphony of unique textures.
+                </div>
+            </div>
+            <div class="why-item" data-aos="fade-up">
+                <div class="why-item-media" data-aos="fade-up">
+                    <div class="why-item-image">
+                        <img src="../../img/home/why-3.svg" alt="why">
+                    </div>
+                </div>
+                <div class="why-item-title" data-aos="fade-up">Professional Grade</div>
+                <div class="why-item-text" data-aos="fade-up">
+                    Elevate your audio production with Metal Marshmallow Pro. Designed for enthusiasts and professionals alike, our Pro series delivers premium sound quality and durability.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			<section class="section video">
+    <div class="container">
+        <div class="title-section" data-aos="fade-up">
+            <h2>Check out the Metal Marshmallow Video Channel</h2>
+        </div>
+        <div class="video-media" data-aos="fade-up">
+            <iframe src="https://www.youtube.com/embed/yiPKaSKfk10?feature=oembed"></iframe>
+        </div>
+    </div>
+</section>
+			<section class="section contact" style="background-image: url('../../img/home/contact-bg-product.jpg')">
+    <div class="container">
+        <div class="title-section" data-aos="fade-up">
+            <h6>Ready to find out more?</h6>
+            <h2>Build The Future With Us</h2>
+            <p>Collaborate, Create, and Shape Tomorrow: Contact us to develop high-tech circuits and hardware.</p>
+        </div>
+        <div class="link-section" data-aos="fade-up">
+            <a href="#" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+		</div>
+	</div>
+	<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="../img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-item">
+                    <div class="footer-title">Contact us</div>
+                    <ul class="footer-list">
+                        <li><a href="tel:8013931414" target="_blank">(801) 393-1414</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title">Address</div>
+                    <ul class="footer-list">
+                        <li>1821 W 4000 S, Roy, <br> UT 84067, USA</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title">Email</div>
+                    <ul class="footer-list">
+                        <li><a href="mailto:power@designcriteria.com" target="_blank">power@designcriteria.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-item">
+                    <div class="footer-title">Product</div>
+                    <ul class="footer-list">
+                        <li><a href="power-supplies.html">Power Supplies</a></li>
+                        <li><a href="magnetics.html">Magnetics</a></li>
+                        <li><a href="iot-remote.html">IoT Remote Sensors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title">Info</div>
+                    <ul class="footer-list">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="metal.html">MM Pro</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#" data-modal-open="#contact-modal">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-social">
+                <li><a href="#" target="_blank" class="footer-social-link"><img src="../img/icons/ln.svg" alt="ln"></a></li>
+                <li><a href="#" target="_blank" class="footer-social-link"><img src="../img/icons/yb.svg" alt="yt"></a></li>
+            </ul>
+            <ul class="footer-bottom-nav">
+                <li>© 2023 Design Criteria, Inc.</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="footer-made">
+                <a href="#" target="_blank"><img src="../img/logo-mini.svg" alt="presto"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<div class="modal" id="contact-modal">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#contact-modal"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="contact-modal">
+				<div class="contact-modal-top">
+					<h6 class="h6">Use this form to describe your project</h6>
+					<div class="modal-close-btn" data-modal-close="#contact-modal">
+						<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+					</div>
+				</div>
+				<div class="contact-modal-form">
+					<form>
+						<p class="contact-modal-inner">
+							Hi, my name is
+
+						<label class="field">
+							<input type="text" placeholder="John Smith" class="field-item" required />
+						</label>
+						. You can
+						</p>
+						<p class="contact-modal-inner">
+							answer me on this email
+							<label class="field">
+								<input type="email" placeholder="email@box.com" class="field-item" required />
+							</label>
+							.
+						</p>
+						<p class="contact-modal-inner">
+							I am looking for help with a
+							<label class="field field-select">
+								<select class="field-item">
+									<option value="Power Supplies">Power Supplies</option>
+									<option value="Power Supplies">Power Supplies</option>
+									<option value="Power Supplies">Power Supplies</option>
+									<option value="Power Supplies">Power Supplies</option>
+								</select>
+							</label>
+						</p>
+						<p class="contact-modal-inner">
+							Message
+						</p>
+						<label class="field">
+							<span class="field-resize"></span>
+							<textarea placeholder="You message" class="field-item" required></textarea>
+						</label>
+						<button class="btn btn-secondary">
+							Submit
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="modal" id="thanks">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#thanks"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="thanks">
+				<div class="thanks-top">
+					<h6 class="h6">Use this form to describe your project</h6>
+					<div class="modal-close-btn" data-modal-close="#contact-modal">
+						<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+					</div>
+				</div>
+				<div class="thanks-content">
+					<h2 class="h2 thanks-content-title">
+						Thank you! <br> Your submission has <br> been received!
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<script src="js/app.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({});
+</script>
+</body>
+</html>

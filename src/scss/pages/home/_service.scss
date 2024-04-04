@@ -1,0 +1,80 @@
+.service{
+  background-size: cover;
+  background-repeat: no-repeat;
+  .label-section{
+    color: var(--color-white);
+    background-color: var(--color-secondary-1);
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &-desc{
+    max-width: 864rem;
+    color: var(--color-white);
+    .title-section{
+      color: var(--color-white);
+      margin-bottom: 24rem;
+    }
+    .text-section{
+      p{
+        margin-bottom: 24rem;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 31rem;
+    margin-top: 72rem;
+  }
+  &-item{
+    padding: 48rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 267rem;
+    max-height: 256rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='267' height='256' viewBox='0 0 267 256' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_b_14608_2696)'%3E%3Crect width='267' height='256' rx='8' fill='white' fill-opacity='0.05'/%3E%3Crect x='0.5' y='0.5' width='266' height='255' rx='7.5' stroke='url(%23paint0_linear_14608_2696)' stroke-opacity='0.2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b_14608_2696' x='-64' y='-64' width='395' height='384' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='32'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_14608_2696'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_14608_2696' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_14608_2696' x1='267' y1='1.50988e-05' x2='-47.5512' y2='165.772' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232E7F9A'/%3E%3Cstop offset='1' stop-color='%23B6C6D7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: cover;
+  }
+  &-media{
+    width: 160rem;
+    height: 160rem;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@include maxWidth($sm) {
+  .service{
+    background-size: cover;
+    background-repeat: no-repeat;
+    .label-section{
+      margin-bottom: 16rem;
+    }
+    &-wrap{
+      margin-top: 48rem;
+      column-gap: 20rem;
+    }
+    &-item{
+      max-width: 88rem;
+      max-height: 84rem;
+    }
+    &-media{
+      width: 52rem;
+      height: 52rem;
+    }
+  }
+}

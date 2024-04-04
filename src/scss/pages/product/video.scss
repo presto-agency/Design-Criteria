@@ -1,0 +1,23 @@
+.video{
+  .title-section{
+    margin-bottom: 64rem;
+    text-align: center;
+  }
+  &-media{
+    width: 1312rem;
+    height: 640rem;
+    iframe{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@include maxWidth($sm) {
+  .video{
+    &-media{
+      width: 320rem;
+      height: 192rem;
+    }
+  }
+}

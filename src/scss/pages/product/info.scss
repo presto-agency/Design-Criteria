@@ -1,0 +1,46 @@
+.info{
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &-media{}
+  &-image{
+    width: 640rem;
+    height: 448rem;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    };
+  }
+  &-desc{
+    max-width: 528rem;
+    margin: 0  0 0 auto;
+    h2{
+      margin-bottom: 24rem;
+    }
+  }
+}
+@include maxWidth($sm) {
+  .info{
+    &-wrap{
+      flex-direction: column;
+    }
+    &-media{
+      margin-bottom:
+              47rem;
+    }
+    &-image{
+      width: 312rem;
+      height: 224rem;
+    }
+    &-desc{
+      max-width: 528rem;
+      margin: 0  0 0 auto;
+      h2{
+        margin-bottom: 24rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.modal{
+	position: fixed;
+	inset: 0;
+	z-index: 9;
+	display: none;
+	opacity: 0;
+	transition: opacity var(--transition-duration) var(--transition-easing);
+	
+		&-bg{
+			background: var(--color-black);
+			opacity: .8;
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+		}
+	
+		&-close{
+			position: absolute;
+			inset: 0;
+			
+				&-btn{
+					width: 32rem;
+					height: 32rem;
+					padding: 8rem;
+					color: var(--color-white);
+					z-index: 1;
+						@include hover($md){
+								&:hover{
+									cursor: pointer;
+									color: var(--color-gray-600);
+								}
+						}
+						
+						@include maxWidth($sm){
+							top: 15rem;
+							right: 15rem;
+						}
+				}
+		}
+		&-box{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			pointer-events: none;
+			padding: 0;
+			overflow-y: hidden;
+				&-item{
+					background-color: var(--color-black-100);
+					max-width: 592rem;
+					width: 100%;
+					height: 100%;
+					pointer-events: auto;
+					margin: 0 0 0 auto;
+					padding: 64rem;
+					overflow: hidden;
+					position: relative;
+					@include maxWidth($sm){
+						padding: 24rem;
+					}
+				}
+		}
+}

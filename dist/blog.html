@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Design Criteria | Magnetics</title>
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="#ffffff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+	
+	<link rel="preload" href="fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="wrapper" id="wrapper">
+
+	<div data-router-wrapper>
+		<div data-router-view="default">
+			<header class="header header-dark" id="header-dark">
+  <div class="header-panel">
+	  <div class="header-panel-logo">
+		  <a href="/" class="logo">
+			  <img src="../../img/logo-dark.svg" alt="Design Criteria"/>
+		  </a>
+	  </div>
+	  <div class="header-panel-nav">
+		  <nav>
+			  <ul>
+				  <li><a href="index.html#about" class="scroll-action" >About Us</a></li>
+				  <li class="menu-item-has-children">
+					  <a>Products</a>
+					  <ul class="sub-menu">
+						  <li>
+							  <a href="power-supplies.html">
+								  <span class="sub-item-image">
+								  	<img src="../img/home/sub-item-1.png" alt="media">
+								  </span>
+								  <span class="sub-item-title">Power Supplies</span>
+								  <span class="sub-item-text">Design Criteria, Inc. is the only manufacture of exclusive, SMART power supplies for demanding applications.</span>
+							  </a>
+						  </li>
+						  <li>
+							  <a href="magnetics.html">
+							  <span class="sub-item-image">
+						  		<img src="../img/home/sub-item-2.png" alt="media">
+							  </span>
+							  <span class="sub-item-title">Magnetics</span>
+							  <span class="sub-item-text">Design Criteria, Inc. pioneers diverse switching power supply components.</span>
+							  </a>
+						  </li>
+						  <li>
+							  <a href="iot-remote.html">
+							  <span class="sub-item-image">
+							  	<img src="../img/home/sub-item-3.png" alt="media">
+							  </span>
+							  <span class="sub-item-title">IoT Remote Sensors</span>
+							  <span class="sub-item-text">We design and manufacture remote sensors for IoT applications for smart homes and smart businesses.</span>
+							  </a>
+						  </li>
+					  </ul>
+				  </li>
+				  <li><a href="metal.html">MM Pro</a></li>
+				  <li><a href="blog.html">Blog</a></li>
+			  </ul>
+		  </nav>
+		  <button type="button" class="header-panel-search">
+			  <img src="../img/icons/search-dark.svg" alt="search">
+		  </button>
+		  <button type="button" class="btn btn-secondary" data-modal-open="#contact-modal">
+			  contact us
+		  </button>
+		  <button class="burger header-panel-burger"><span></span></button>
+	  </div>
+  </div>
+	<div class="header-panel-overlay"></div>
+	<div class="header-search">
+		<div class="container">
+			<div class="header-search-form">
+				<form>
+					<label>
+						<input type="text" placeholder="Search" class="search-field">
+					</label>
+				</form>
+			</div>
+			<div class="header-search-result">
+				<ul>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+			<section class="section hero-blog">
+<div class="container">
+    <div class="hero-desc">
+        <h1 class="hero-blog-title h1" data-load-order="1">News, insights and more</h1>
+        <div class="hero-blog-text" data-load-order="2">Learn more about company news, our approach to culture, and our area of work.</div>
+    </div>
+    <div class="hero-blog-top" data-load-order="3">
+        <div class="blog-item" data-aos="fade-up">
+            <div class="blog-item-media">
+                <a href="#" class="blog-item-image">
+                    <picture>
+                        <source srcset="../../img/home/blog-page-1.png" type="image/png">
+                        <source srcset="../../img/home/blog-page-1.webp" type="image/webp">
+                        <img src="../../img/home/blog-page-1.png">
+                    </picture>
+                </a>
+            </div>
+            <div class="blog-item-desc">
+                <div class="blog-item-date">May 22, 2023 • 6 min read</div>
+                <div class="blog-item-title h5">DC-DC Power Converters</div>
+                <div class="blog-item-text">Power converters have universal applications but are commonly used in the medical field, military, and in industrial settings. Careful consideration in the manufacturing of power supplies is vital because of the significance of its capability and the importance of its reliability.</div>
+                <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+			<section class="section blog blog-page">
+    <div class="container">
+        <div class="top-section">
+            <div class="title-section" data-aos="fade-up">
+                <h2>Innovative Information Blog</h2>
+                <p>Innovative Insights: Your Source for Future-Forward Knowledge.</p>
+            </div>
+        </div>
+        <div class="blog-wrap">
+            <div class="blog-item " data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-2.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-2.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-2.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Current Sense Transformers</div>
+                    <div class="blog-item-text">Current sense transformers are primarily used in electric power distribution stations and other generator/power stations because of its propensity to modify secondary alternating current to match primary current.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item" data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-3.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-3.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-3.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Current Sense Transformers</div>
+                    <div class="blog-item-text">Current sense transformers are primarily used in electric power distribution stations and other generator/power stations because of its propensity to modify secondary alternating current to match primary current.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item" data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-4.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-4.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-4.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Common Mode Choke</div>
+                    <div class="blog-item-text">Common Mode Chokes are a type of inductor that specialize in simultaneously "choking" high frequencies and passing low frequencies in an electrical circuit.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item " data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-5.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-5.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-5.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Soldering</div>
+                    <div class="blog-item-text">Soldering is a useful skill when working with small-scale projects like circuit boards or jewelry. It is an effective method to merge two objects together using solder material which is commonly composed of lead or tin.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item" data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-6.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-6.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-6.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Toroidal Inductors and Transformers</div>
+                    <div class="blog-item-text">Toroidal transformers and inductors are one of the most widely utilized electrical components because of its abundance of desired qualities.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item" data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-7.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-7.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-7.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">LED Off-Road Lights</div>
+                    <div class="blog-item-text">The durability, sustainability, and performance capabilities of lights are vital considerations when making off-road trips. Preventing breakage and ensuring a long-lasting and reliable product is our specialty.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item " data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-8.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-8.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-8.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Remote Smart Sensors</div>
+                    <div class="blog-item-text">Remote smart sensors are valuable tools and are increasingly becoming used in everyday objects like toothbrushes, children rooms, hotels, homes, cars, and hospitals. It has revolutionized user-interface communication and continues to give us unique opportunities to improve the usability of products.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item" data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-9.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-9.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-9.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Smart Inventory Management Systems</div>
+                    <div class="blog-item-text">Smart Inventory Management Systems improve accuracy of data collection, reduce worktime by doing manual tasks automatically, and can provide reports. These systems support a wide range of disciplines from theater concession stands to large oil tanks.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+            <div class="blog-item" data-aos="fade-up">
+                <div class="blog-item-media">
+                    <a href="#" class="blog-item-image">
+                        <picture>
+                            <source srcset="../../img/home/blog-page-10.png" type="image/png">
+                            <source srcset="../../img/home/blog-page-10.webp" type="image/webp">
+                            <img src="../../img/home/blog-page-10.png">
+                        </picture>
+                    </a>
+                </div>
+                <div class="blog-item-desc">
+                    <div class="blog-item-date">Dec 25, 2024 • 6 min read</div>
+                    <div class="blog-item-title h5">Inductors</div>
+                    <div class="blog-item-text">Inductors are electrical components that have wire coiled around it which allows it to hold onto energy in a respective magnetic field. Inductors are often used to help prevent the current from changing whether it is changing the type of current, the direction of current, or the magnitude.</div>
+                    <div class="blog-item-link"><a href="#" class="link-arrow link-arrow-secondary">Learn more</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination"  data-aos="fade-up">
+            <a href="#" class="pagination-prev">prev</a>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><span>...</span></li>
+                <li class="curent"><span>8</span></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
+            <a href="#" class="pagination-next">next</a>
+        </div>
+        <div class="pagination-mobile"  data-aos="fade-up">
+            <a href="#" class="pagination-prev"></a>
+            <div class="pagination-mobile-info">
+                Page <span>1</span> of <span>10</span>
+            </div>
+            <a href="#" class="pagination-next"></a>
+        </div>
+    </div>
+</section>
+			<section class="section contact" style="background-image: url('../../img/home/contact-bg.jpg')">
+    <div class="container">
+        <div class="title-section" data-aos="fade-up">
+            <h6>Ready to find out more?</h6>
+            <h2>Build The Future With Us</h2>
+            <p>Collaborate, Create, and Shape Tomorrow: Contact us to develop high-tech circuits and hardware.</p>
+        </div>
+        <div class="link-section" data-aos="fade-up">
+            <button type="button" class="btn btn-secondary" data-modal-open="#contact-modal">
+                contact us
+            </button>
+        </div>
+    </div>
+</section>
+
+		</div>
+	</div>
+	<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="../img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-item">
+                    <div class="footer-title">Contact us</div>
+                    <ul class="footer-list">
+                        <li><a href="tel:8013931414" target="_blank">(801) 393-1414</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title">Address</div>
+                    <ul class="footer-list">
+                        <li>1821 W 4000 S, Roy, <br> UT 84067, USA</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title">Email</div>
+                    <ul class="footer-list">
+                        <li><a href="mailto:power@designcriteria.com" target="_blank">power@designcriteria.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-item">
+                    <div class="footer-title">Product</div>
+                    <ul class="footer-list">
+                        <li><a href="power-supplies.html">Power Supplies</a></li>
+                        <li><a href="magnetics.html">Magnetics</a></li>
+                        <li><a href="iot-remote.html">IoT Remote Sensors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title">Info</div>
+                    <ul class="footer-list">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="metal.html">MM Pro</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#" data-modal-open="#contact-modal">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-social">
+                <li><a href="#" target="_blank" class="footer-social-link"><img src="../img/icons/ln.svg" alt="ln"></a></li>
+                <li><a href="#" target="_blank" class="footer-social-link"><img src="../img/icons/yb.svg" alt="yt"></a></li>
+            </ul>
+            <ul class="footer-bottom-nav">
+                <li>© 2023 Design Criteria, Inc.</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="footer-made">
+                <a href="#" target="_blank"><img src="../img/logo-mini.svg" alt="presto"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<div class="modal" id="contact-modal">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#contact-modal"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="contact-modal">
+				<div class="contact-modal-top">
+					<h6 class="h6">Use this form to describe your project</h6>
+					<div class="modal-close-btn" data-modal-close="#contact-modal">
+						<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+					</div>
+				</div>
+				<div class="contact-modal-form">
+					<form>
+						<p class="contact-modal-inner">
+							Hi, my name is
+
+						<label class="field">
+							<input type="text" placeholder="John Smith" class="field-item" required />
+						</label>
+						. You can
+						</p>
+						<p class="contact-modal-inner">
+							answer me on this email
+							<label class="field">
+								<input type="email" placeholder="email@box.com" class="field-item" required />
+							</label>
+							.
+						</p>
+						<p class="contact-modal-inner">
+							I am looking for help with a
+							<label class="field field-select">
+								<select class="field-item">
+									<option value="Power Supplies">Power Supplies</option>
+									<option value="Power Supplies">Power Supplies</option>
+									<option value="Power Supplies">Power Supplies</option>
+									<option value="Power Supplies">Power Supplies</option>
+								</select>
+							</label>
+						</p>
+						<p class="contact-modal-inner">
+							Message
+						</p>
+						<label class="field">
+							<span class="field-resize"></span>
+							<textarea placeholder="You message" class="field-item" required></textarea>
+						</label>
+						<button class="btn btn-secondary">
+							Submit
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="modal" id="thanks">
+	<div class="modal-bg"></div>
+	<div class="modal-close" data-modal-close="#thanks"></div>
+	<div class="modal-box" data-lenis-prevent>
+		<div class="modal-box-item">
+			<div class="thanks">
+				<div class="thanks-top">
+					<h6 class="h6">Use this form to describe your project</h6>
+					<div class="modal-close-btn" data-modal-close="#contact-modal">
+						<svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+					</div>
+				</div>
+				<div class="thanks-content">
+					<h2 class="h2 thanks-content-title">
+						Thank you! <br> Your submission has <br> been received!
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<script src="js/app.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({});
+</script>
+</body>
+</html>

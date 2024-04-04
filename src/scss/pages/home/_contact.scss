@@ -1,0 +1,23 @@
+.contact{
+  background-size: cover;
+  background-repeat: no-repeat;
+  .title-section{
+    max-width: 528rem;
+    color: var(--color-white);
+  }
+  h6{
+    font: var(--font-h6);
+    margin-bottom: 16rem;
+  }
+  h2{
+    margin-bottom: 24rem;
+  }
+  p{
+    margin-bottom: 48rem;
+  }
+}
+@include maxWidth($sm) {
+  .contact{
+    background-position: 70% 0;
+  }
+}

@@ -1,0 +1,32 @@
+.contact-modal{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .h6{
+      color: var(--color-white);
+    }
+  }
+  &-form{
+    margin: auto 0;
+  }
+  &-inner{
+    font: var(--font-body-xl);
+    display: block;
+    margin-bottom: 12rem;
+    color: var(--color-white);
+    .field{
+      display: inline-block;
+      &-select{
+        width: 100%;
+        max-width: 214rem;
+      }
+    }
+  }
+  .btn{
+    margin-top: 36rem;
+  }
+}

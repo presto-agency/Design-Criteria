@@ -1,0 +1,119 @@
+.innovating{
+  position: relative;
+  z-index: 3;
+  background-color: var(--color-white);
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &-wrap{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+  .label-section{
+    transition: all ease 500ms;
+  }
+  .title-section{
+    text-indent: 112rem;
+    margin-bottom: 32rem;
+    transition: all ease 500ms;
+  }
+  &-desc{
+    max-width: 864rem;
+    margin-bottom: 80rem;
+    transition: all ease 500ms;
+  }
+  &-text{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32rem;
+    p{
+      width: 50%;
+      max-width: 420rem;
+      line-height: 156%;
+    }
+  }
+  &-link{
+    .btn-line{
+        padding: 20rem 32rem;
+        height: 51rem;
+        min-height: 51rem;
+    }
+  }
+  &-item{
+    width: 304rem;
+    padding: 32rem 0 0;
+    transition: all ease 500ms;
+    &:nth-child(2){
+      margin: 0 336rem;
+    }
+    &:nth-child(3){
+      margin: 35rem 336rem 0;
+    }
+    &:nth-child(4){
+      margin: 34rem 0 0 3rem;
+    }
+    &-number{
+      font: var(--font-h1);
+      color: var(--color-primary-1);
+      margin-bottom: 8rem;
+      font-weight: 700;
+    }
+    &-text{
+      font: var(--font-body-m);
+    }
+  }
+}
+@include maxWidth($sm) {
+  .innovating{
+    .label-section{
+      margin-bottom: 16rem;
+    }
+    .title-section{
+      text-indent: 0;
+    }
+    &-desc{
+      margin-bottom: 48rem;
+    }
+    &-text{
+      margin-bottom: 0;
+      p{
+        width: 100%;
+        margin-bottom: 32rem;
+      }
+    }
+    &-link{
+      a{
+        width: 100%;
+      }
+    }
+    &-item{
+      width: 304rem;
+      padding: 32rem 0 0;
+      &:nth-child(1){
+        max-width: 248rem;
+        margin-left: auto;
+      }
+      &:nth-child(2){
+        margin: 0 0;
+      }
+      &:nth-child(3){
+        max-width: 248rem;
+        margin: 0 0 0 auto;
+      }
+      &-number{
+        font: var(--font-h1-mobile);
+        font-weight: 700;
+      }
+      &-text{
+        font: var(--font-body-m-mobile);
+      }
+    }
+  }
+}

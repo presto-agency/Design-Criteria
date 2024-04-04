@@ -1,0 +1,19 @@
+.thanks{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .h6{
+      color: var(--color-white);
+    }
+  }
+  &-content{
+    margin: auto 0;
+    .h2{
+      color: var(--color-white);
+    }
+  }
+}
