@@ -2049,7 +2049,7 @@ svg {
 }
 
 .header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-image {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-300);
 }
 
 .header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-title {
@@ -2438,33 +2438,6 @@ svg {
 
 .hero .container {
   z-index: 1;
-}
-
-.full-carousel {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 68rem;
-  height: 68rem;
-  border-radius: 50%;
-  border: 1rem solid rgba(0, 172, 234, 0.2);
-  background: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity var(--transition-duration) var(--transition-easing);
-}
-
-.carousel-cursor-label {
-  font: var(--font-body-s);
 }
 
 .progress {
@@ -3253,6 +3226,7 @@ svg {
 .footer-title {
   font: var(--font-h6);
   color: var(--color-gray-700);
+  font-weight: 700;
   margin-bottom: 24rem;
 }
 
@@ -3413,7 +3387,7 @@ svg {
 }
 
 .hero-text {
-  color: var(--color-white);
+  color: var(--color-gray-300);
   font: var(--font-body-m);
   margin-bottom: 48rem;
   max-width: 430rem;
@@ -3654,7 +3628,7 @@ svg {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .innovating .label-section {
@@ -3684,6 +3658,7 @@ svg {
   width: 50%;
   max-width: 420rem;
   line-height: 156%;
+  color: var(--color-gray-700);
 }
 
 .innovating-link .btn-line {
@@ -3696,6 +3671,7 @@ svg {
   width: 304rem;
   padding: 32rem 0 0;
   transition: all ease 500ms;
+  border-top: 1rem solid var(--color-gray-300);
 }
 
 .innovating-item:nth-child(2) {
@@ -3736,9 +3712,12 @@ svg {
   background-color: var(--color-secondary-1);
 }
 
-.solution .text-section,
 .solution .title-section {
   color: var(--color-white);
+}
+
+.solution .text-section {
+  color: var(--color-gray-300);
 }
 
 .solution .section-top {
@@ -3784,7 +3763,7 @@ svg {
 }
 
 .advantages {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-200);
 }
 
 .advantages-wrap {
@@ -3836,6 +3815,7 @@ svg {
 
 .advantages-desc .h6 {
   font: var(--font-h6);
+  font-weight: 700;
 }
 
 .advantages-desc .section-subtitle {
@@ -3920,6 +3900,10 @@ svg {
   margin-bottom: 24rem;
 }
 
+.service-desc .text-section {
+  color: var(--color-gray-300);
+}
+
 .service-desc .text-section p {
   margin-bottom: 24rem;
 }
@@ -3973,6 +3957,14 @@ svg {
   margin-bottom: 64rem;
 }
 
+.blog .top-section p {
+  color: var(--color-gray-700);
+}
+
+.blog .title-section {
+  color: var(--color-secondary-1);
+}
+
 .blog .title-section h2,
 .blog .title-section .h2 {
   display: block;
@@ -3981,6 +3973,12 @@ svg {
 
 .blog .link-block {
   margin: auto 0 0 0;
+}
+
+.blog .link-block .btn-line {
+  padding: 15rem 32rem;
+  min-height: auto;
+  height: auto;
 }
 
 .blog-wrap {
@@ -4037,6 +4035,10 @@ svg {
   margin-bottom: 16rem;
   font: var(--font-body-m);
   color: var(--color-gray-700);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .blog-item-link {
@@ -4243,6 +4245,7 @@ svg {
 .contact h6 {
   font: var(--font-h6);
   margin-bottom: 16rem;
+  color: var(--color-gray-300);
 }
 
 .contact h2 {
@@ -4250,6 +4253,7 @@ svg {
 }
 
 .contact p {
+  color: var(--color-gray-300);
   margin-bottom: 48rem;
 }
 
@@ -4706,7 +4710,7 @@ svg {
 
 .contact-modal-inner .field-select {
   width: 100%;
-  max-width: 214rem;
+  max-width: 204rem;
 }
 
 .contact-modal .btn {

@@ -1,5 +1,5 @@
 .advantages{
-  background-color: var(--color-white);
+  background-color: var(--color-gray-200);
   &-wrap{
     display: flex;
     justify-content: space-between;
@@ -8,6 +8,7 @@
   &-media{
     position: relative;
   }
+
   &-image{
     width: 640rem;
     height: 448rem;
@@ -40,6 +41,7 @@
     padding-top: 34rem;
     .h6{
       font: var(--font-h6);
+      font-weight: 700;
     }
     .section-subtitle{
       margin-bottom: 16rem;

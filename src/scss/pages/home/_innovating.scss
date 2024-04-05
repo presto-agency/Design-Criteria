@@ -13,7 +13,7 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   .label-section{
     transition: all ease 500ms;
@@ -37,6 +37,7 @@
       width: 50%;
       max-width: 420rem;
       line-height: 156%;
+      color: var(--color-gray-700);
     }
   }
   &-link{
@@ -50,6 +51,7 @@
     width: 304rem;
     padding: 32rem 0 0;
     transition: all ease 500ms;
+    border-top: 1rem solid var(--color-gray-300);
     &:nth-child(2){
       margin: 0 336rem;
     }

@@ -9,9 +9,12 @@
 }
 .solution{
   background-color: var(--color-secondary-1);
-  .text-section,
+
   .title-section{
     color: var(--color-white);
+  }
+  .text-section{
+    color: var(--color-gray-300);
   }
   .section-top{
     margin-bottom: 64rem;
