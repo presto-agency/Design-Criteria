@@ -3729,7 +3729,7 @@ svg {
   font-weight: 700;
 }
 
-.innovating-item-text {
+.innovating-item-title {
   font: var(--font-body-m);
   color: var(--color-gray-700);
 }
