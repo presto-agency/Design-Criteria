@@ -46,14 +46,14 @@ export const initModalSearch = () => {
 
 	document.addEventListener('click', handleClick);
 	searchField.addEventListener("input", () => {
-		if(searchField.value.length > 8){
+		if(searchField.value.length > 4){
 			headerSearchResult.classList.add('is-active');
 		}else{
 			headerSearchResult.classList.remove('is-active')
 		}
 	});
 	window.addEventListener("scroll", function() {
-		if (window.scrollY >= 150) {
+		if (window.scrollY >= 100) {
 			headerItem.classList.remove('active-search');
 			headerItem.classList.remove('active');
 			headerBurger.classList.remove('active');

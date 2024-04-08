@@ -51,7 +51,15 @@
 				}
 		}
 		select.field-item{
-			color: var(--color-gray-800);
+			color: var(--color-white);
+
+			&::placeholder {
+				color: var(--color-gray-800);
+			}
+			option{
+				font: var(--font-body-xl);
+				color: var(--color-black);
+			}
 		}
 		textarea.field-item{
 			resize: vertical;
