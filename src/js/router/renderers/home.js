@@ -1,6 +1,5 @@
 import Highway from '@dogstudio/highway';
 import {initAccordion} from '../../modules/accordion/initAccordion.js';
-
 import {scrollTo} from '../../common/scrollTo.js';
 import {loadContent} from '../../common/loadContent.js';
 

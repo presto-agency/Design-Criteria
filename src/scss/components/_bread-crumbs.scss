@@ -1,26 +1,34 @@
 .bread-crumbs{
 	position: relative;
-	margin: 64rem 0;
+	margin: 32rem 0 64rem;
+	@include maxWidth($sm){
+		margin: 32rem 0 32rem;
+	}
 		ul{
 			display: flex;
 			align-items: center;
+			@include maxWidth($sm){
+				flex-wrap: wrap;
+			}
 		}
 	
 		li{
 			position: relative;
-			margin-right: 28rem;
+			margin-right: 33rem;
 			max-width: 385rem;
 			display: inline-block;
 			height: 24rem;
 			font: var(--font-body-m);
 				@include maxWidth($sm){
 					max-width: 200rem;
+					margin-bottom: 8rem;
+					font: var(--font-body-m-mobile);
 				}
 			
 				&:after{
 					position: absolute;
 					content: '';
-					right: -20rem;
+					right: -25rem;
 					top: 50%;
 					margin-top: -8rem;
 					width: 16rem;
@@ -52,6 +60,9 @@
 		a{
 			font: var(--font-body-m);
 			color: var(--color-gray-600);
+			@include maxWidth($sm){
+				font: var(--font-body-m-mobile);
+			}
 			&:hover{
 				color: var(--color-primary-1);
 			}

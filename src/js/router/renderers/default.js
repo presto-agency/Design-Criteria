@@ -13,13 +13,13 @@ class DefaultRenderer extends Highway.Renderer {
 		initBlogNav();
 		initAccordionCore();
 		initHeroCarousel();
+		initModalSearch();
 		console.log('Entering on page');
 	}
 	onEnterCompleted() {
 		scrollTo();
 		loadContent();
 		initModal();
-		initModalSearch();
 		console.log('Completed Enter on page');
 	}
 }

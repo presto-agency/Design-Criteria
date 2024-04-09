@@ -3,7 +3,6 @@ export const initBlogNav = () => {
 	if (blogNav.length) {
 		(function addTitlesToRelativeBlock() {
 			let titles = document.querySelectorAll('.post-desc h3, .post-desc h2');
-
 			const relativeBlock = document.querySelector('.post-content-list');
 			let first_el = document.createElement('a');
 			titles.forEach(function (title, i) {
@@ -19,6 +18,7 @@ export const initBlogNav = () => {
 			});
 		}());
 		const navLinks = document.querySelectorAll('.post-content-list a');
+
 		window.addEventListener('scroll', () => {
 			const scrollY = window.scrollY;
 			for (const link of navLinks) {
@@ -27,7 +27,7 @@ export const initBlogNav = () => {
 				const sectionTop = section.offsetTop;
 				const sectionBottom = sectionTop + section.clientHeight;
 				if (scrollY >= sectionTop && scrollY < sectionBottom) {
-					// link.classList.add('active-color');
+					link.classList.add('active-color');
 				} else {
 					// link.classList.remove('active-color');
 				}
