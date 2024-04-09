@@ -9,12 +9,7 @@ export const scrollTo = () => {
                     let box = document.querySelector('.hero');
                     let width = box.offsetWidth;
                     let height = box.offsetHeight;
-                    console.log(height);
                     window.scrollTo({ top: height, behavior: 'smooth'});
-                    // const target = document.querySelector(button.dataset.target);
-                    // if (target) {
-                    //     lenis.scrollTo(target, { duration: 1.5 });
-                    // }
                 });
             });
         }

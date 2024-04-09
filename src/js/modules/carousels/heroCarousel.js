@@ -8,7 +8,7 @@ export const initHeroCarousel = () => {
 	if (heroCarousel) {
         const splide = new Splide(heroCarousel, {
             type: 'slide',
-            drag: 'free',
+            drag: false,
             perPage: 1,
             arrows: false,
             pagination: false,
@@ -19,7 +19,7 @@ export const initHeroCarousel = () => {
         splide.mount();
         heroCarouselNext.addEventListener('click', e => {
             splide.go('+1')
-        })
+        });
         heroCarouselPrev.addEventListener('click', e => {
             splide.go('-1')
         })

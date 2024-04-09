@@ -46,10 +46,13 @@ export const initModalSearch = () => {
 
 	document.addEventListener('click', handleClick);
 	searchField.addEventListener("input", () => {
-		if(searchField.value.length > 4){
+		const noResultsText = document.querySelector(".search-not-found");
+		if(searchField.value.length > 1){
 			headerSearchResult.classList.add('is-active');
+			frontSearchFunction();
 		}else{
-			headerSearchResult.classList.remove('is-active')
+			headerSearchResult.classList.remove('is-active');
+			noResultsText.style.display = "none";
 		}
 	});
 	window.addEventListener("scroll", function() {
@@ -60,6 +63,31 @@ export const initModalSearch = () => {
 			headerSearch.classList.remove('is-active');
 		}
 	});
+	function frontSearchFunction() {
+		const query = document.querySelector("#searchItem").value.toLowerCase();
+		const list = document.querySelector(".header-search-list").getElementsByTagName("li");
+		const noResults = document.querySelector(".search-not-found");
+		const noResultsTitle = document.querySelector(".search-value");
+		let found = false;
+		for (let i = 0; i < list.length; i++) {
+			const text = list[i].textContent.toLowerCase();
+			const spanText = list[i].getElementsByTagName("a")[0].textContent.toLowerCase();
+			if (spanText.includes(query)) {
+				list[i].style.display = "";
+				const highlightedText = spanText.replace(new RegExp(query, "gi"), match => `<span class="highlight">${match}</span>`);
+				list[i].getElementsByTagName("a")[0].innerHTML = highlightedText;
+				found = true;
+			} else {
+				list[i].style.display = "none";
+			}
+		}
+		if (!found) {
+			noResults.style.display = "";
+			noResultsTitle.textContent =  query;
+		} else {
+			noResults.style.display = "none";
+		}
+	}
 };
 
 

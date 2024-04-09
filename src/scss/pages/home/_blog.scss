@@ -79,6 +79,12 @@
     &-title{
       margin-bottom: 8rem;
       color: var(--color-secondary-1);
+      a{
+        color: inherit;
+        &:hover{
+          color: var(--color-primary-1);
+        }
+      }
     }
     &-text{
       max-width: 368rem;

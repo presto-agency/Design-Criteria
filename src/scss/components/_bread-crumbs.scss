@@ -1,6 +1,6 @@
 .bread-crumbs{
 	position: relative;
-
+	margin: 64rem 0;
 		ul{
 			display: flex;
 			align-items: center;
@@ -12,7 +12,7 @@
 			max-width: 385rem;
 			display: inline-block;
 			height: 24rem;
-			
+			font: var(--font-body-m);
 				@include maxWidth($sm){
 					max-width: 200rem;
 				}
@@ -31,7 +31,7 @@
 				}
 			
 				&:last-child{
-					color: var(--color-gray-400);
+					color: var(--color-primary-1);
 					margin-right: 0;
 					
 						&:after{
@@ -50,8 +50,10 @@
 		}
 	
 		a{
-			background: var(--color-primary-gradient);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			font: var(--font-body-m);
+			color: var(--color-gray-600);
+			&:hover{
+				color: var(--color-primary-1);
+			}
 		}
 }

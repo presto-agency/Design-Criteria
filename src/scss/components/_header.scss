@@ -324,6 +324,9 @@
 	}
 	&.header-dark{
 		border-color: var(--color-gray-300);
+		&.active-search{
+			background-color: var(--color-white);
+		}
 		.header{
 			&-panel{
 				&-nav{
@@ -551,5 +554,16 @@
 	}
 }
 .search-not-found{
-	display: none;
+	h6{
+		display: block;
+		color: var(--color-white);
+		margin-bottom: 16rem;
+	}
+	p{
+		color: var(--color-gray-300);
+	}
+}
+.highlight {
+	color: var(--color-white);
+	font-weight: bold;
 }
