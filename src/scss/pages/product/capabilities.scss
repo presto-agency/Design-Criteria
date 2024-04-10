@@ -1,5 +1,5 @@
 .capabilities{
-  padding: 104rem 0 92rem;
+  padding: 104rem 0 73rem;
   background: var(--color-secondary-1);
   .label-section{
     background: var(--color-secondary-1);
@@ -41,14 +41,18 @@
     max-width: 864rem;
     ul{
       display: flex;
-      flex-wrap: wrap;
+      flex-flow: column wrap;
+      align-content: space-between;
+      height: 288rem;
       li{
         color: var(--color-gray-300);
         font: var(--font-body-m);
         width: 50%;
-        margin-bottom: 10rem;
+        margin-bottom: 8.5rem;
         padding: 0 20rem;
         position: relative;
+        &:nth-of-type(2n+1) { order: 1; }
+        &:nth-of-type(2n+2) { order: 2; }
         &:nth-of-type(2n){
           margin-left: 16rem;
           width: calc(50% - 16rem);
@@ -141,6 +145,7 @@
     }
     &-info{
       ul{
+        height: auto;
         li{
           font: var(--font-body-m-mobile);
           width: 100%;

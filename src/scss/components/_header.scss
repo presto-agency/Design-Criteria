@@ -38,16 +38,21 @@
 					&.menu-item-has-children{
 						p{
 							position: relative;
+							display: flex;
+							align-items: center;
 							&:after{
-								position: absolute;
+								position: relative;
 								content: '';
-								right: 14rem;
-								top: 22rem;
+								display: inline-block;
+								transition: all ease 150ms;
+								right: 0;
+								top: 0;
 								width: 24rem;
 								height: 24rem;
 								background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 16.5L7.66987 9.75L16.3301 9.75L12 16.5Z' fill='%23F9F9F9'/%3E%3C/svg%3E%0A");
 								background-size: contain;
 								background-repeat: no-repeat;
+								background-position: 6rem -2rem;
 							}
 						}
 						&:hover{
@@ -55,6 +60,7 @@
 								background-color: var(--color-primary-1);
 								&:after{
 									transform: rotate(180deg);
+									background-position: -6rem 0;
 								}
 							}
 							.sub-menu{
@@ -151,7 +157,7 @@
 					}
 					a, p{
 						display: inline-block;
-						padding: 26rem 40rem;
+						padding: 26rem 39rem 21rem;
 						text-transform: uppercase;
 						font: var(--font-body-m-b);
 						color: var(--color-white);
@@ -449,8 +455,8 @@
 								}
 								a, p{
 									&:after{
-										right: -20rem;
-										top: 24rem;
+										right: 0;
+										top: 0;
 										width: 32rem;
 										height: 32rem;
 									}

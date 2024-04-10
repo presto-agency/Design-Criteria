@@ -50,6 +50,11 @@
       color: var(--color-gray-300);
     }
   }
+  & + .video{
+    .title-section{
+      color: var(--color-secondary-1);
+    }
+  }
 }
 @include maxWidth($sm) {
   .why{

@@ -2011,18 +2011,23 @@ svg {
 
 .header-panel-nav ul li.menu-item-has-children p {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .header-panel-nav ul li.menu-item-has-children p:after {
-  position: absolute;
+  position: relative;
   content: "";
-  right: 14rem;
-  top: 22rem;
+  display: inline-block;
+  transition: all ease 150ms;
+  right: 0;
+  top: 0;
   width: 24rem;
   height: 24rem;
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 16.5L7.66987 9.75L16.3301 9.75L12 16.5Z' fill='%23F9F9F9'/%3E%3C/svg%3E%0A");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: 6rem -2rem;
 }
 
 .header-panel-nav ul li.menu-item-has-children:hover a,
@@ -2033,6 +2038,7 @@ svg {
 .header-panel-nav ul li.menu-item-has-children:hover a:after,
 .header-panel-nav ul li.menu-item-has-children:hover p:after {
   transform: rotate(180deg);
+  background-position: -6rem 0;
 }
 
 .header-panel-nav ul li.menu-item-has-children:hover .sub-menu {
@@ -2134,7 +2140,7 @@ svg {
 .header-panel-nav ul li a,
 .header-panel-nav ul li p {
   display: inline-block;
-  padding: 26rem 40rem;
+  padding: 26rem 39rem 21rem;
   text-transform: uppercase;
   font: var(--font-body-m-b);
   color: var(--color-white);
@@ -4649,12 +4655,13 @@ svg {
 .contact h6 {
   font: var(--font-h6);
   margin-bottom: 17rem;
-  color: var(--color-gray-300);
+  color: var(--color-white);
   font-weight: 700;
 }
 
 .contact h2 {
   margin-bottom: 24rem;
+  color: var(--color-white);
 }
 
 .contact p {
@@ -4798,7 +4805,7 @@ svg {
 }
 
 .capabilities {
-  padding: 104rem 0 92rem;
+  padding: 104rem 0 73rem;
   background: var(--color-secondary-1);
 }
 
@@ -4852,16 +4859,26 @@ svg {
 
 .capabilities-info ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 288rem;
 }
 
 .capabilities-info ul li {
   color: var(--color-gray-300);
   font: var(--font-body-m);
   width: 50%;
-  margin-bottom: 10rem;
+  margin-bottom: 8.5rem;
   padding: 0 20rem;
   position: relative;
+}
+
+.capabilities-info ul li:nth-of-type(2n+1) {
+  order: 1;
+}
+
+.capabilities-info ul li:nth-of-type(2n+2) {
+  order: 2;
 }
 
 .capabilities-info ul li:nth-of-type(2n) {
@@ -5034,6 +5051,10 @@ svg {
 .why-item-text {
   font: var(--font-body-m);
   color: var(--color-gray-300);
+}
+
+.why + .video .title-section {
+  color: var(--color-secondary-1);
 }
 
 .modal {
@@ -8564,8 +8585,8 @@ svg {
 
   .header-panel-nav nav ul li.menu-item-has-children a:after,
   .header-panel-nav nav ul li.menu-item-has-children p:after {
-    right: -20rem;
-    top: 24rem;
+    right: 0;
+    top: 0;
     width: 32rem;
     height: 32rem;
   }
@@ -9415,6 +9436,10 @@ svg {
     max-width: 312rem;
     max-height: 224rem;
     margin: 0 auto;
+  }
+
+  .capabilities-info ul {
+    height: auto;
   }
 
   .capabilities-info ul li {
