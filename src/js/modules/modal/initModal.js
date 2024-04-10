@@ -16,15 +16,17 @@ export const initModal = () => {
 
 	/* open */
 	if (openElements.length) {
-		const burger = document.querySelector('.burger');
-		const header = document.querySelector('.header');
+
 		for (let openElement of openElements) {
 			openElement.addEventListener('click', () => {
 				const modalId = openElement.dataset.modalOpen;
 				switchModal(modalId, true);
-
-				burger.classList.toggle('active');
-				header.classList.toggle('active');
+				if (window.innerWidth <= 768){
+					const burger = document.querySelector('.burger');
+					const header = document.querySelector('.header');
+					burger.classList.toggle('active');
+					header.classList.toggle('active');
+				}
 			})
 		}
 	}
