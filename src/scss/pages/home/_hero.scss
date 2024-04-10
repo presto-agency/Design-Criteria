@@ -307,6 +307,10 @@
         font: var(--font-body-s);
         color: var(--color-gray-600);
         position: relative;
+        transition: all ease 300ms;
+        &:hover{
+          color: var(--color-primary-1);
+        }
         &:before{
           position: absolute;
           content: '';

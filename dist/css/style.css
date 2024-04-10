@@ -3757,6 +3757,11 @@ svg {
   font: var(--font-body-s);
   color: var(--color-gray-600);
   position: relative;
+  transition: all ease 300ms;
+}
+
+.post-content-nav a:hover {
+  color: var(--color-primary-1);
 }
 
 .post-content-nav a:before {
@@ -4959,6 +4964,11 @@ svg {
 
 .info-desc h2 {
   margin-bottom: 24rem;
+  color: var(--color-secondary-1);
+}
+
+.info-desc p {
+  color: var(--color-gray-700);
 }
 
 .why {
