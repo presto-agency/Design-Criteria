@@ -363,6 +363,11 @@
 			}
 		}
 	}
+	.btn{
+		padding: 22rem 33rem;
+		height: 60rem;
+		min-height: 59rem;
+	}
 }
 @include maxWidth($sm) {
 	.header{

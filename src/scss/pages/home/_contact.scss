@@ -7,7 +7,7 @@
   }
   h6{
     font: var(--font-h6);
-    margin-bottom: 16rem;
+    margin-bottom: 17rem;
     color: var(--color-gray-300);
     font-weight: 700;
   }
@@ -16,7 +16,8 @@
   }
   p{
     color: var(--color-gray-300);
-    margin-bottom: 48rem;
+    margin-bottom: 43rem;
+    line-height: 157%;
   }
 }
 @include maxWidth($sm) {

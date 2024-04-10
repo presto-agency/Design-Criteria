@@ -2363,6 +2363,12 @@ svg {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 16.5L7.66987 9.75L16.3301 9.75L12 16.5Z' fill='%23F9F9F9'/%3E%3C/svg%3E%0A");
 }
 
+.header .btn {
+  padding: 22rem 33rem;
+  height: 60rem;
+  min-height: 59rem;
+}
+
 .search-not-found h6 {
   display: block;
   color: var(--color-white);
@@ -3243,13 +3249,17 @@ svg {
   flex-wrap: wrap;
   margin: 0 auto;
   position: relative;
-  left: 45rem;
+  left: 55rem;
 }
 
 .footer-info .footer-item {
-  max-width: 202rem;
+  max-width: 212rem;
   width: 50%;
   margin-bottom: 24rem;
+}
+
+.footer-info .footer-item:nth-of-type(2) {
+  padding-left: 18rem;
 }
 
 .footer-info .footer-list a:hover {
@@ -3272,7 +3282,7 @@ svg {
 }
 
 .footer-list li {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .footer-list a,
@@ -3294,7 +3304,7 @@ svg {
 .footer-bottom-nav {
   width: 500rem;
   display: flex;
-  margin: 30rem auto 0;
+  margin: 24rem auto 0;
 }
 
 .footer-bottom-nav li,
@@ -3304,7 +3314,7 @@ svg {
 }
 
 .footer-bottom-nav li {
-  margin-right: 34rem;
+  margin-right: 36rem;
   position: relative;
 }
 
@@ -3341,6 +3351,7 @@ svg {
   align-items: center;
   -moz-column-gap: 8rem;
        column-gap: 8rem;
+  margin: -4rem 0 0;
 }
 
 .footer-social-link {
@@ -3370,7 +3381,7 @@ svg {
 }
 
 .footer-made {
-  margin-top: 78rem;
+  margin-top: 75rem;
   width: 184rem;
   height: 22rem;
 }
@@ -3467,7 +3478,7 @@ svg {
 }
 
 .hero.hero-product {
-  padding: 135rem 0 104rem;
+  padding: 135rem 0 77rem;
   height: auto;
 }
 
@@ -3516,6 +3527,7 @@ svg {
 .hero.hero-remote .hero-title {
   margin: 16rem 0 24rem;
   max-width: 1100rem;
+  letter-spacing: 0;
 }
 
 .hero.hero-remote .hero-wrap {
@@ -3652,7 +3664,7 @@ svg {
 .hero-nav .splide__arrow {
   width: 48rem;
   height: 48rem;
-  border: 1rem solid var(--color-white);
+  border: 1rem solid var(--color-gray);
   position: relative;
   top: 0;
   transform: none;
@@ -3660,6 +3672,11 @@ svg {
   right: 0;
   border-radius: 8rem;
   background: transparent;
+}
+
+.hero-nav .splide__arrow:hover {
+  border-color: var(--color-primary-1);
+  background-color: var(--color-primary-1);
 }
 
 .hero-video {
@@ -4212,6 +4229,7 @@ svg {
 
 .advantages.advantages-product {
   padding: 104rem 0 70rem;
+  background-color: var(--color-white);
 }
 
 .advantages.advantages-product .advantages-desc {
@@ -4625,7 +4643,7 @@ svg {
 
 .contact h6 {
   font: var(--font-h6);
-  margin-bottom: 16rem;
+  margin-bottom: 17rem;
   color: var(--color-gray-300);
   font-weight: 700;
 }
@@ -4636,11 +4654,13 @@ svg {
 
 .contact p {
   color: var(--color-gray-300);
-  margin-bottom: 48rem;
+  margin-bottom: 43rem;
+  line-height: 157%;
 }
 
 .list {
   padding-bottom: 0;
+  background-color: var(--color-gray-200);
 }
 
 .list-wrap {
@@ -4667,24 +4687,36 @@ svg {
 }
 
 .list-inner-media {
-  top: 11rem;
-  right: 40rem;
+  top: 51rem;
+  right: 38rem;
   position: absolute;
-  width: 274.43rem;
-  height: 153rem;
+  width: 228.43rem;
+  height: 140rem;
 }
 
 .list-inner-media img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list-inner:last-of-type .list-inner-media {
+  width: 304.43rem;
+  height: 196.3rem;
+  top: 13rem;
+  right: 34rem;
 }
 
 .list-item {
   border-bottom: 1rem solid var(--color-gray);
   padding-bottom: 16rem;
   margin-bottom: 16rem;
+}
+
+.list-item .list-inner-media {
+  width: 226rem;
+  height: 219rem;
 }
 
 .list-item:last-of-type {
@@ -4712,6 +4744,7 @@ svg {
   font: var(--font-h6);
   color: var(--color-secondary-1);
   position: relative;
+  font-weight: 700;
   cursor: pointer;
   padding-right: 20rem;
 }
@@ -4736,6 +4769,10 @@ svg {
   visibility: hidden;
   height: 0;
   max-width: 430rem;
+}
+
+.video {
+  background-color: var(--color-gray-200);
 }
 
 .video .title-section {
@@ -4839,11 +4876,12 @@ svg {
 }
 
 .capabilities.bg-white {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-200);
+  padding: 106rem 0 88rem;
 }
 
 .capabilities.bg-white + .contact {
-  padding: 90rem 0;
+  padding: 90rem 0 93rem;
 }
 
 .capabilities.bg-white .label-section {
@@ -4892,6 +4930,10 @@ svg {
   background: var(--color-primary-1);
 }
 
+.info {
+  background-color: var(--color-gray-200);
+}
+
 .info-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -4920,7 +4962,7 @@ svg {
 }
 
 .why {
-  background-color: var(--color-secondary-1);
+  background-color: var(--color-black-100);
 }
 
 .why .title-section {
@@ -4942,7 +4984,7 @@ svg {
   max-width: 416rem;
   border-radius: 8rem;
   color: var(--color-white);
-  background-color: var(--color-white-20);
+  background-color: var(--color-secondary-1);
 }
 
 .why-item-media {
@@ -4976,10 +5018,12 @@ svg {
 .why-item-title {
   margin-bottom: 8rem;
   font: var(--font-h5);
+  font-weight: 700;
 }
 
 .why-item-text {
   font: var(--font-body-m);
+  color: var(--color-gray-300);
 }
 
 .modal {

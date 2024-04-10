@@ -67,9 +67,10 @@
     }
   }
   &.bg-white{
-    background-color: var(--color-white);
+    background-color: var(--color-gray-200);
+    padding: 106rem 0 88rem;
     & + .contact{
-      padding: 90rem 0;
+      padding: 90rem 0 93rem;
     }
     .label-section{
       background-color: var(--color-gray-300);
