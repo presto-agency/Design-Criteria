@@ -8,25 +8,106 @@
     justify-content: space-between;
     .h6{
       color: var(--color-white);
+      font-weight: 700;
     }
   }
   &-form{
-    margin: auto 0;
+    margin: 133rem 0 0;
   }
   &-inner{
     font: var(--font-body-xl);
     display: block;
-    margin-bottom: 12rem;
     color: var(--color-white);
+    line-height: 48rem;
     .field{
       display: inline-block;
+      width: 100%;
+      max-width: 224rem;
+      margin: 0 0 0 3rem;
+      &:first-of-type{
+        margin: 0 10rem 0 3rem;
+      }
       &-select{
         width: 100%;
         max-width: 204rem;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9L12 15L18 9' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: 24rem;
+        background-position: 98% 50%;
+        select{
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+        }
       }
     }
   }
+
   .btn{
-    margin-top: 36rem;
+    margin-top: 30rem;
+    padding: 22rem 32rem;
+  }
+}
+.contact-message-inner{
+  font: var(--font-body-xl);
+  display: block;
+  color: var(--color-white);
+  margin: 8rem 0 0;
+  .field{
+    margin: 14rem 0 0;
+  }
+}
+@include maxWidth($sm) {
+  .modal{
+    background-color: var(--color-secondary-1);
+    top: 60rem;
+  }
+  .modal-box-item{
+    background-color: var(--color-secondary-1);
+  }
+  .contact-modal{
+    background-color: var(--color-secondary-1);
+    height: 100%;
+    &-top{
+      margin-top: 8rem;
+      .h6{
+        color: var(--color-white);
+      }
+    }
+    &-form{
+      margin: 62rem 0 0;
+      .field-item{
+        padding: 0 2rem 3rem;
+
+      }
+    }
+    &-inner{
+      font: var(--font-body-xl-mobile);
+      display: block;
+      color: var(--color-white);
+      line-height: 42rem;
+      .field{
+        display: inline-flex;
+        max-width: 222rem;
+        &:first-of-type{
+          max-width: 170rem;
+        }
+        &:nth-of-type(2){
+          margin-right: 80rem;
+        }
+      }
+    }
+    .btn{
+      margin-top: 24rem;
+      width: 100%;
+    }
+  }
+  .contact-message-inner{
+    font: var(--font-body-xl-mobile);
+    margin: 8rem 0 0;
+    .field{
+      margin: 14rem 0 0;
+    }
   }
 }

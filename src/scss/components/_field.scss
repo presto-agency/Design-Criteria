@@ -2,26 +2,12 @@
 	display: block;
 	position: relative;
 
-		&-label{
-			font: var(--font-body-s);
-			font-size: 10rem;
-			font-weight: 500;
-			text-transform: uppercase;
-			color: var(--color-gray-400);
-			position: absolute;
-			top: 8rem;
-			left: 16rem;
-			display: inline-block;
-			letter-spacing: 0.04em;
-			pointer-events: none;
-		}
-	
 		&-item{
 			width: 100%;
 			max-width: 224rem;
 			font: var(--font-body-xl);
 			color: var(--color-white);
-			padding: 0;
+			padding: 0 0 7rem 0;
 			border: 0;
 			border-bottom: 1rem var(--color-gray-800) solid;
 			border-radius: 0;
@@ -71,27 +57,6 @@
 				}
 		}
 	
-		&-message{
-			position: absolute;
-			font: var(--font-body-s);
-			font-size: 10rem;
-			font-weight: 500;
-			letter-spacing: 0.04em;
-			top: 8rem;
-			right: 16rem;
-			text-transform: uppercase;
-			pointer-events: none;
-			display: none;
-			
-				&.__success{
-					color: var(--color-success);
-				}
-			
-				&.__error{
-					color: var(--color-error);
-				}
-		}
-	
 		&-resize{
 			position: absolute;
 			width: 17rem;
@@ -104,7 +69,6 @@
 			background-position: center;
 			pointer-events: none;
 		}
-	
 		/* states */
 		&.__success{
 			.field{
