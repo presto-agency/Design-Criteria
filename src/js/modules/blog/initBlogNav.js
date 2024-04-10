@@ -1,6 +1,6 @@
 export const initBlogNav = () => {
 	const blogNav = document.querySelectorAll('.post-desc');
-	if (blogNav) {
+	if (blogNav.length) {
 		function anchorAnimation(anchors, yOffset) {
 			for (let anchor of anchors) {
 				anchor.addEventListener('click', function (e) {
