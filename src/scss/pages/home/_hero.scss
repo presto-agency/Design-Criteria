@@ -280,6 +280,8 @@
   &-media{
     width: 1312rem;
     height: 640rem;
+    overflow: hidden;
+    border-radius: 4rem;
     img{
       width: 100%;
       height: 100%;
@@ -445,6 +447,7 @@
         img{
           width: 100%;
           height: 100%;
+          border-radius: 4rem;
         }
         figcaption{
           display: block;
