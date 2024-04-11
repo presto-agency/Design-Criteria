@@ -17,6 +17,8 @@
     opacity: 0;
     visibility: hidden;
     z-index: -1;
+    border-radius: 4rem;
+    overflow: hidden;
     &.is-active{
       position: relative;
       opacity: 1;

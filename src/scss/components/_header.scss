@@ -165,6 +165,9 @@
 							background-color: var(--color-primary-1);
 						}
 					}
+					p{
+						padding: 23rem 39rem 18rem;
+					}
 				}
 			}
 		}
@@ -338,6 +341,7 @@
 				&-nav{
 					ul {
 						li {
+							border-color: var(--color-gray-300);
 							&:hover{
 								a, p{
 									color: var(--color-white);

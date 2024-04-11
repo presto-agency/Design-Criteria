@@ -21,6 +21,8 @@
     right: 0;
     width: 874rem;
     height: 673rem;
+    border-radius: 4rem;
+    overflow: hidden;
     z-index: -2;
     img{
       width: 100%;
@@ -185,6 +187,8 @@
       .hero-media-image{
         width: 632rem;
         height: 560rem;
+        border-radius: 4rem;
+        overflow: hidden;
       }
       &.hero-media-half{
         display: flex;
@@ -231,6 +235,7 @@
       border: 1rem solid var(--color-gray);
       position: relative;
       top: 0;
+      opacity: 1;
       transform: none;
       left: 0;
       right: 0;

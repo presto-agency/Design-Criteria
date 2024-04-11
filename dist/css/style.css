@@ -2149,6 +2149,10 @@ svg {
   background-color: var(--color-primary-1);
 }
 
+.header-panel-nav ul li p {
+  padding: 23rem 39rem 18rem;
+}
+
 .header-panel-search {
   background: transparent;
   border: 0;
@@ -2340,6 +2344,10 @@ svg {
 
 .header.header-dark.active-search {
   background-color: var(--color-white);
+}
+
+.header.header-dark .header-panel-nav ul li {
+  border-color: var(--color-gray-300);
 }
 
 .header.header-dark .header-panel-nav ul li:hover a,
@@ -3197,6 +3205,8 @@ svg {
   right: 0;
   width: 874rem;
   height: 673rem;
+  border-radius: 4rem;
+  overflow: hidden;
   z-index: -2;
 }
 
@@ -3393,6 +3403,8 @@ svg {
 .hero-slider-media .hero-media-image {
   width: 632rem;
   height: 560rem;
+  border-radius: 4rem;
+  overflow: hidden;
 }
 
 .hero-slider-media.hero-media-half {
@@ -3447,6 +3459,7 @@ svg {
   border: 1rem solid var(--color-gray);
   position: relative;
   top: 0;
+  opacity: 1;
   transform: none;
   left: 0;
   right: 0;
@@ -3892,6 +3905,11 @@ svg {
   margin-bottom: 24rem;
 }
 
+.solution-item-image {
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
 .solution-item-image img {
   width: 100%;
   height: 100%;
@@ -3935,6 +3953,8 @@ svg {
   opacity: 0;
   visibility: hidden;
   z-index: -1;
+  border-radius: 4rem;
+  overflow: hidden;
 }
 
 .advantages-image.is-active {
@@ -4154,6 +4174,8 @@ svg {
   display: block;
   width: 400rem;
   height: 256rem;
+  border-radius: 4rem;
+  overflow: hidden;
 }
 
 .blog-item-image img {
@@ -4568,6 +4590,8 @@ svg {
 .video-media {
   width: 1312rem;
   height: 640rem;
+  border-radius: 4rem;
+  overflow: hidden;
 }
 
 .video-media iframe {
@@ -4615,6 +4639,8 @@ svg {
   max-height: 256rem;
   width: 100%;
   height: 100%;
+  border-radius: 4rem;
+  overflow: hidden;
   margin: 102rem 0 auto auto;
 }
 
@@ -4652,11 +4678,6 @@ svg {
 
 .capabilities-info ul li:nth-of-type(2n+2) {
   order: 2;
-}
-
-.capabilities-info ul li:nth-of-type(2n) {
-  margin-left: 16rem;
-  width: calc(50% - 16rem);
 }
 
 .capabilities-info ul li:before {
@@ -4738,6 +4759,8 @@ svg {
 .info-image {
   width: 640rem;
   height: 448rem;
+  border-radius: 4rem;
+  overflow: hidden;
 }
 
 .info-image img {
