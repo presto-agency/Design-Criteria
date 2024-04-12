@@ -1,17 +1,22 @@
 export const initBlogNav = () => {
-	const blogNav = document.querySelectorAll('.post-desc');
-	if (blogNav.length) {
+	document.addEventListener("DOMContentLoaded", function(event) {
+		const blogNav = document.querySelectorAll('.post-desc');
 		function anchorAnimation(anchors, yOffset) {
 			for (let anchor of anchors) {
 				anchor.addEventListener('click', function (e) {
 					e.preventDefault();
 					const blockID = anchor.getAttribute('href').substr(1);
 					const obj = document.getElementById(blockID);
+					console.log(obj);
+
 					const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
+					console.log(y);
 					window.scrollTo({ top: y, behavior: 'smooth' });
 				})
 			}
-		};
+		}
+	if (blogNav.length) {
+
 		function showMenu(menu, objects, topValue, bottomValue) {
 			window.addEventListener("scroll", scrolling, false);
 
@@ -118,5 +123,5 @@ export const initBlogNav = () => {
 			scrollerColors(elementsPage, blogNav)
 		}());
 	}
-
+	});
 };
