@@ -352,6 +352,7 @@
           font: var(--font-body-m);
           color: var(--color-black);
           width: 177rem;
+          box-shadow: 0px 11px 56px 0px rgba(0,0,0,0.08);
           display: block;
           transition: all ease 300ms;
           opacity: 0;
@@ -722,6 +723,19 @@
         ul{
           a{
             padding: 0;
+          }
+        }
+        li{
+          .tooltip{
+            top: -55rem;
+            padding: 8rem 16rem 8rem 44rem;
+            width: 140rem;
+            &:before{
+              width: 18rem;
+              height: 18rem;
+              left: 18rem;
+              top: 11.5rem;
+            }
           }
         }
       }
