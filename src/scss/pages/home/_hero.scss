@@ -366,6 +366,9 @@
     &-desc{
       width: 100%;
       max-width: 864rem;
+      h1, h2, h3, h4, h5, h6{
+        color: var(--color-secondary-1);
+      }
       hr{
         display: block;
         height: 1rem;
@@ -525,7 +528,7 @@
 @include maxWidth($sm) {
   .hero{
     padding: 100rem 0 100rem;
-    min-height: 768rem;
+    min-height: 100vh;
     .container{
       justify-content: flex-start;
     }
@@ -565,7 +568,7 @@
       .hero{
         &-wrap{
           flex-direction: column;
-          margin: 48rem auto 80rem;
+          margin: 48rem auto 0;
           .hero-media{
             max-width: 312rem;
             height: 224rem;

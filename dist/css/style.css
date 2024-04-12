@@ -60,6 +60,7 @@
   --color-black: #202436;
   --color-black-80: rgba(32,36,54,.8);
   --color-black-100: #324267;
+  --color-black-800: #424F6F;
   --color-blue: #01B7E6;
   --color-blue-100: #BFD4E4;
   --color-gray: #E5E7EC;
@@ -3085,7 +3086,7 @@ svg {
 
 .footer-bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: row-reverse;
 }
 
@@ -3614,6 +3615,15 @@ svg {
   max-width: 864rem;
 }
 
+.post-content-desc h1,
+.post-content-desc h2,
+.post-content-desc h3,
+.post-content-desc h4,
+.post-content-desc h5,
+.post-content-desc h6 {
+  color: var(--color-secondary-1);
+}
+
 .post-content-desc hr {
   display: block;
   height: 1rem;
@@ -3931,7 +3941,9 @@ svg {
 .solution-item {
   width: 100%;
   max-width: 416rem;
+  background-color: var(--color-black-800);
   padding: 8rem 8rem 22rem;
+  border-radius: 8rem;
 }
 
 .solution-item-media {
@@ -4385,6 +4397,7 @@ svg {
 
 .pagination ul span,
 .pagination ul a {
+  transition: all ease 300ms;
   font: var(--font-h6);
   padding: 12rem 10.5rem;
   border-radius: 4rem;
@@ -4403,6 +4416,11 @@ svg {
   color: var(--color-secondary-1);
 }
 
+.pagination ul a:hover {
+  background: var(--color-primary-1);
+  color: var(--color-white);
+}
+
 .pagination-prev,
 .pagination-next {
   text-transform: uppercase;
@@ -4415,9 +4433,10 @@ svg {
 .pagination-next:after {
   position: absolute;
   content: "";
-  top: 0;
+  top: 50%;
+  margin-top: -8rem;
   width: 16rem;
-  height: 17rem;
+  height: 16rem;
   transition: all ease 300ms;
 }
 
@@ -4432,11 +4451,15 @@ svg {
   background-repeat: no-repeat;
 }
 
+.pagination-prev:hover {
+  color: var(--color-primary-1);
+}
+
 .pagination-prev:hover:after {
-  top: -1.5rem;
-  left: -2rem;
+  margin-top: -10rem;
   width: 20rem;
   height: 20rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='8' fill='%235981F0'/%3E%3Cpath d='M11.7058 8.0518L4.78202 8.05179' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.2439 11.5137L4.78202 8.05179L8.2439 4.58992' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 
 .pagination-next {
@@ -4450,11 +4473,15 @@ svg {
   right: 0;
 }
 
+.pagination-next:hover {
+  color: var(--color-primary-1);
+}
+
 .pagination-next:hover:after {
-  top: -1.5rem;
-  right: -2rem;
+  margin-top: -10rem;
   width: 20rem;
   height: 20rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='10' fill='%235981F0'/%3E%3Cpath d='M5.97661 10.0656H14.6313' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.304 5.73828L14.6313 10.0656L10.304 14.393' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 
 .pagination-mobile {
@@ -8632,6 +8659,7 @@ svg {
   }
 
   .footer-bottom {
+    align-items: center;
     flex-direction: column;
   }
 
@@ -8674,7 +8702,7 @@ svg {
 
   .hero {
     padding: 100rem 0 100rem;
-    min-height: 768rem;
+    min-height: 100vh;
   }
 
   .hero .container {
@@ -8723,7 +8751,7 @@ svg {
 
   .hero.hero-remote .hero-wrap {
     flex-direction: column;
-    margin: 48rem auto 80rem;
+    margin: 48rem auto 0;
   }
 
   .hero.hero-remote .hero-wrap .hero-media {
@@ -8945,6 +8973,10 @@ svg {
     margin-bottom: 32rem;
   }
 
+  .innovating-link {
+    width: 100%;
+  }
+
   .innovating-link a {
     width: 100%;
   }
@@ -8986,6 +9018,10 @@ svg {
     font: var(--font-body-m-mobile);
   }
 
+  .solution-item {
+    margin-bottom: 24rem;
+  }
+
   .solution-item-media {
     margin-bottom: 16rem;
   }
@@ -9013,6 +9049,10 @@ svg {
   .advantages-image {
     max-width: 312rem;
     max-height: 224rem;
+  }
+
+  .advantages-desc {
+    padding: 0;
   }
 
   .advantages-desc .h6 {
@@ -9205,6 +9245,8 @@ svg {
   }
 
   .list-inner {
+    position: relative;
+    z-index: 2;
     max-width: 312rem;
     border-radius: 8rem;
     padding: 24rem;
@@ -9221,8 +9263,18 @@ svg {
     top: 40rem;
     right: 24rem;
     position: absolute;
-    width: 128.59rem;
-    height: 82rem;
+    z-index: -1;
+  }
+
+  .list-inner:nth-of-type(1) .list-inner-media {
+    width: 98.59rem;
+    height: 62rem;
+  }
+
+  .list-inner:nth-of-type(2) .list-inner-media {
+    top: 40rem;
+    width: 118.59rem;
+    height: 67rem;
   }
 
   .list-item-title {
@@ -9278,6 +9330,10 @@ svg {
   .capabilities-info ul li:nth-of-type(2n) {
     margin-left: 0;
     width: 100%;
+  }
+
+  .capabilities.bg-white {
+    padding: 80rem 0;
   }
 
   .capabilities.bg-white + .contact {

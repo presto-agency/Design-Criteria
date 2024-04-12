@@ -73,7 +73,7 @@
 	}
 	&-bottom{
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		flex-direction: row-reverse;
 		&-nav{
 			width: 500rem;
@@ -172,6 +172,7 @@
 			}
 		}
 		&-bottom{
+			align-items: center;
 			flex-direction: column;
 			&-nav{
 				li, a{

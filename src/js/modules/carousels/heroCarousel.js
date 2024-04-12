@@ -10,6 +10,7 @@ export const initHeroCarousel = () => {
             type: 'slide',
             drag: false,
             perPage: 1,
+            gap: '2em',
             arrows: false,
             pagination: false,
             autoWidth: false,

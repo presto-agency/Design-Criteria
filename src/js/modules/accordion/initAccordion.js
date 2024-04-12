@@ -35,7 +35,7 @@ export const initAccordion = () => {
 
 			});
 
-			accordionRows[0].querySelector('.list-item-title').click();
+			// accordionRows[0].querySelector('.list-item-title').click();
 		});
 	}
 };

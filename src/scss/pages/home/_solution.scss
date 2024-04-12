@@ -27,7 +27,9 @@
   &-item{
     width: 100%;
     max-width: 416rem;
+    background-color: var(--color-black-800);
     padding: 8rem 8rem 22rem;
+    border-radius: 8rem;
     &-media{
       margin-bottom: 24rem;
     }
@@ -66,6 +68,7 @@
   }
   .solution{
     &-item{
+      margin-bottom: 24rem;
       &-media{
         margin-bottom: 16rem;
       }
