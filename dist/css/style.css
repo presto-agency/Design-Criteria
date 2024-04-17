@@ -3181,6 +3181,41 @@ svg {
   height: 100%;
 }
 
+.not-found {
+  background: var(--color-secondary-1);
+  height: 100vh;
+  min-height: 768rem;
+  padding: 202rem 0 0;
+  text-align: center;
+}
+
+.not-found-title {
+  font: 700 224rem/179.2rem var(--font-family-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 16rem;
+  color: var(--color-primary-1);
+}
+
+.not-found-text {
+  max-width: 460px;
+  margin: 0 auto 32px;
+}
+
+.not-found-text h2 {
+  color: var(--color-white);
+  margin-bottom: 34rem;
+}
+
+.not-found-text p {
+  font: var(--font-body-m);
+  color: var(--color-white);
+}
+
+.not-found-link .btn-secondary:hover {
+  background: var(--color-primary-1);
+  opacity: 0.8;
+}
+
 .hero {
   background: var(--color-secondary-1);
   top: 0;
@@ -8714,6 +8749,36 @@ svg {
 
   .footer-made {
     margin-top: 24rem;
+  }
+
+  .not-found {
+    padding: 219rem 0 0;
+  }
+
+  .not-found-title {
+    font: 700 128rem/102.4rem var(--font-family-primary);
+  }
+
+  .not-found-text {
+    max-width: 312px;
+  }
+
+  .not-found-text h2 {
+    margin-bottom: 24rem;
+  }
+
+  .not-found-text p {
+    font: var(--font-body-m-mobile);
+  }
+
+  .not-found-link {
+    max-width: 312px;
+    margin: 0 auto;
+  }
+
+  .not-found-link .btn {
+    width: 100%;
+    text-align: center;
   }
 
   .hero {
