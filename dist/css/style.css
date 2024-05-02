@@ -2401,8 +2401,13 @@ svg {
   color: var(--color-black-100);
 }
 
-.title-section span {
+.title-section .h3 {
   color: var(--color-primary-1);
+}
+
+.title-section .h3,
+.title-section .p {
+  text-indent: 0;
 }
 
 .hero {
@@ -2423,7 +2428,7 @@ svg {
   position: absolute;
   inset: 0;
   opacity: 0.3;
-  background: linear-gradient(262deg, rgba(1, 21, 29, 0) -0.28%, #01151D 95.72%);
+  background: linear-gradient(262deg, rgba(1, 21, 29, 0) -0.28%, #01151d 95.72%);
   background-blend-mode: soft-light;
   z-index: 1;
   pointer-events: none;
@@ -3411,7 +3416,7 @@ svg {
   padding: 56rem 64rem 56rem 56rem;
 }
 
-.hero-slider-desc h6 {
+.hero-slider-desc .h6 {
   display: block;
   margin-bottom: 16rem;
   color: var(--color-secondary-1);
@@ -4558,7 +4563,7 @@ svg {
   color: var(--color-white);
 }
 
-.contact h6 {
+.contact .h6 {
   font: var(--font-h6);
   margin-bottom: 17rem;
   color: var(--color-white);

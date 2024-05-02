@@ -1,28 +1,28 @@
-.contact{
-  background-size: cover;
-  background-repeat: no-repeat;
-  .title-section{
-    max-width: 528rem;
-    color: var(--color-white);
-  }
-  h6{
-    font: var(--font-h6);
-    margin-bottom: 17rem;
-    color: var(--color-white);
-    font-weight: 700;
-  }
-  h2{
-    margin-bottom: 24rem;
-    color: var(--color-white);
-  }
-  p{
-    color: var(--color-gray-300);
-    margin-bottom: 43rem;
-    line-height: 157%;
-  }
+.contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    .title-section {
+        max-width: 528rem;
+        color: var(--color-white);
+    }
+    .h6 {
+        font: var(--font-h6);
+        margin-bottom: 17rem;
+        color: var(--color-white);
+        font-weight: 700;
+    }
+    h2 {
+        margin-bottom: 24rem;
+        color: var(--color-white);
+    }
+    p {
+        color: var(--color-gray-300);
+        margin-bottom: 43rem;
+        line-height: 157%;
+    }
 }
 @include maxWidth($sm) {
-  .contact{
-    background-position: 70% 0;
-  }
+    .contact {
+        background-position: 70% 0;
+    }
 }

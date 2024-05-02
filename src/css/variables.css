@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url("../fonts/SuisseIntl-Regular.woff2");
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url("../fonts/TimesNewRoman.woff2");
+}
+@font-face {
+  font-family: "TimesNewRoman-Bold";
+  src: url("../fonts/TimesNewRoman-Bold.woff2");
+}
+/* Breakpoints */
+:root {
+  /* Fonts */
+  --font-family-primary: "Times New Roman";
+  --font-family-secondary: "SuisseIntl-Regular";
+  /* Headings */
+  --font-h1: 500 80rem / 105% var(--font-family-primary);
+  --font-h2: 500 48rem / 120% var(--font-family-primary);
+  --font-h3: 500 40rem / 120% var(--font-family-primary);
+  --font-h4: 500 32rem / 120% var(--font-family-primary);
+  --font-h5: 500 24rem / 120% var(--font-family-primary);
+  --font-h6: 500 16rem / 110% var(--font-family-primary);
+  /* Headings mobile */
+  --font-h1-mobile: 500 40rem / 105% var(--font-family-primary);
+  --font-h2-mobile: 500 38rem / 120% var(--font-family-primary);
+  --font-h3-mobile: 500 28rem / 120% var(--font-family-primary);
+  --font-h4-mobile: 500 24rem / 120% var(--font-family-primary);
+  --font-h5-mobile: 500 20rem / 120% var(--font-family-primary);
+  --font-h6-mobile: 500 14rem / 110% var(--font-family-primary);
+  /* Body */
+  --font-body-r: 400 16rem / 145% var(--font-family-secondary);
+  --font-body-l: 500 18rem / 145% var(--font-family-secondary);
+  --font-body-b: 700 16rem / 145% var(--font-family-secondary);
+  --font-body-u: 700 14rem / 120% var(--font-family-secondary);
+  --font-body-xs: 400 12rem / 154% var(--font-family-secondary);
+  --font-body-xs-label: 700 12rem / 150% var(--font-family-primary);
+  --font-body-s: 400 14rem / 154% var(--font-family-secondary);
+  --font-body-m-b: 700 16rem / 116% var(--font-family-primary);
+  --font-body-m: 400 16rem / 154% var(--font-family-secondary);
+  --font-body-xl: 400 20rem / 140% var(--font-family-secondary);
+  /* Body mobile */
+  --font-body-xs-mobile: 400 10rem / 154% var(--font-family-secondary);
+  --font-body-s-mobile: 400 12rem / 154% var(--font-family-secondary);
+  --font-body-m-mobile: 400 14rem / 154% var(--font-family-secondary);
+  --font-body-xl-mobile: 400 18rem / 140% var(--font-family-secondary);
+  --font-body-r-mobile: 400 15rem / 145% var(--font-family-secondary);
+  --font-body-l-mobile: 500 17rem / 145% var(--font-family-secondary);
+  --font-body-b-mobile: 700 15rem / 145% var(--font-family-secondary);
+  --font-body-u-mobile: 700 12rem / 120% var(--font-family-secondary);
+  /* Colors */
+  --color-primary-1: #5981F0;
+  --color-secondary-1: #475576;
+  --color-primary-gradient: linear-gradient(297deg, var(--color-primary-1) 0%, var(--color-primary-2) 100%);
+  --color-black: #202436;
+  --color-black-80: rgba(32,36,54,.8);
+  --color-black-100: #324267;
+  --color-black-800: #424F6F;
+  --color-blue: #01B7E6;
+  --color-blue-100: #BFD4E4;
+  --color-gray: #E5E7EC;
+  --color-gray-200: #F5F6F9;
+  --color-gray-300: #ECEFF6;
+  --color-gray-400: #C1C4CD;
+  --color-gray-500: #ADB1BD;
+  --color-gray-600: #999EAD;
+  --color-gray-700: #808698;
+  --color-gray-800: #656A7C;
+  --color-white: #FFFFFF;
+  --color-white-20: rgba(255,255,255,.2);
+  --color-white-40: rgba(255,255,255,.4);
+  --color-success: #21D184;
+  --color-error: #FF5C5C;
+  --color-link: #3870FF;
+  --transition-duration: 0.5s;
+  --transition-easing: ease;
+}
