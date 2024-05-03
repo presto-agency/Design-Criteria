@@ -3206,7 +3206,12 @@ svg {
   margin: 0 auto 32px;
 }
 
-.not-found-text h2 {
+.not-found-text h1,
+.not-found-text h2,
+.not-found-text h3,
+.not-found-text h4,
+.not-found-text h5,
+.not-found-text h6 {
   color: var(--color-white);
   margin-bottom: 34rem;
 }
@@ -3379,7 +3384,12 @@ svg {
   max-width: 528rem;
 }
 
-.hero.hero-remote .hero-inner h4 {
+.hero.hero-remote .hero-inner h1,
+.hero.hero-remote .hero-inner h2,
+.hero.hero-remote .hero-inner h3,
+.hero.hero-remote .hero-inner h4,
+.hero.hero-remote .hero-inner h5,
+.hero.hero-remote .hero-inner h6 {
   margin-bottom: 24rem;
 }
 
@@ -4236,8 +4246,20 @@ svg {
   color: var(--color-secondary-1);
 }
 
+.blog .title-section h1,
 .blog .title-section h2,
-.blog .title-section .h2 {
+.blog .title-section h3,
+.blog .title-section h4,
+.blog .title-section h5,
+.blog .title-section h6,
+.blog .title-section .h1,
+.blog .title-section .h2,
+.blog .title-section .h3,
+.blog .title-section .h4,
+.blog .title-section .h5,
+.blog .title-section .accordion-md .accordion-item-title,
+.accordion-md .blog .title-section .accordion-item-title,
+.blog .title-section .h6 {
   display: block;
   margin-bottom: 24rem;
 }
@@ -4570,7 +4592,12 @@ svg {
   font-weight: 700;
 }
 
-.contact h2 {
+.contact h1,
+.contact h2,
+.contact h3,
+.contact h4,
+.contact h5,
+.contact h6 {
   margin-bottom: 24rem;
   color: var(--color-white);
 }
