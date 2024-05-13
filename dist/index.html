@@ -1,122 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Design Criteria | Home</title>
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
-	
-	<link rel="preload" href="fonts/TimesNewRoman-Bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/TimesNewRoman.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="preload" href="fonts/SuisseIntl-Regular.woff" as="font" type="font/woff" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Design Criteria | Home</title>
 
-	<link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
 
-</head>
-<body>
-<main class="wrapper" id="wrapper">
-	<header class="header" id="header">
-  <div class="header-panel">
-	  <div class="header-panel-logo">
-		  <a href="/" class="logo">
-			  <img src="../../img/logo.svg" alt="Design Criteria"/>
-		  </a>
-	  </div>
-	  <div class="header-panel-nav">
-		  <nav>
-			  <ul>
-				  <li><a href="index.html#about" class="scroll-action" >About Us</a></li>
-				  <li class="menu-item-has-children">
-					  <p>Products</p>
-					  <ul class="sub-menu">
-						  <li>
-							  <a href="power-supplies.html">
-								  <span class="sub-item-image">
-								  	<picture>
-										<source srcset="../../img/home/solution-1.webp" type="image/webp">
-										<source srcset="../../img/home/solution-1.png" type="image/png">
-										<img src="../../img/home/solution-1.png" alt="solution">
-									</picture>
-								  </span>
-								  <span class="sub-item-title">Power Supplies</span>
-								  <span class="sub-item-text">Design Criteria, Inc. is the only manufacture of exclusive, SMART power supplies for demanding applications.</span>
-							  </a>
-						  </li>
-						  <li>
-							  <a href="magnetics.html">
-							  <span class="sub-item-image">
-						  		<picture>
-										<source srcset="../../img/home/solution-2.webp" type="image/webp">
-										<source srcset="../../img/home/solution-2.png" type="image/png">
-										<img src="../../img/home/solution-2.png" alt="solution">
-									</picture>
-							  </span>
-							  <span class="sub-item-title">Magnetics</span>
-							  <span class="sub-item-text">Design Criteria, Inc. pioneers diverse switching power supply components.</span>
-							  </a>
-						  </li>
-						  <li>
-							  <a href="iot-remote.html">
-							  <span class="sub-item-image">
-							  	<picture>
-										<source srcset="../../img/home/solution-3.webp" type="image/webp">
-										<source srcset="../../img/home/solution-3.png" type="image/png">
-										<img src="../../img/home/solution-3.png" alt="solution">
-									</picture>
-							  </span>
-							  <span class="sub-item-title">IoT Remote Sensors</span>
-							  <span class="sub-item-text">We design and manufacture remote sensors for IoT applications for smart homes and smart businesses.</span>
-							  </a>
-						  </li>
-					  </ul>
-				  </li>
-				  <li><a href="metal.html">MM Pro</a></li>
-				  <li><a href="blog.html">Blog</a></li>
-			  </ul>
-		  </nav>
-		  <button type="button" class="header-panel-search">
-			  <img src="../img/icons/search.svg" alt="search">
-		  </button>
-		  <button type="button" class="btn btn-primary" data-modal-open="#contact-modal">
-			  contact us
-		  </button>
-		  <button class="burger header-panel-burger"><span></span></button>
-	  </div>
-  </div>
-	<div class="header-panel-overlay"></div>
-	<div class="header-search">
-		<div class="container">
-			<div class="header-search-form">
-				<form>
-					<label>
-						<input type="text" placeholder="Search" class="search-field" id="searchItem" autocomplete="off">
-					</label>
-				</form>
-			</div>
-			<div class="header-search-result">
-				<ul class="header-search-list">
-					<li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
-					<li><a href="#">IoT Lorem ipsum dolor sit amet consectetur.</a></li>
-					<li><a href="#">Power Supplies Lorem ipsum dolor sit amet consectetur.</a></li>
-				</ul>
-			</div>
-			<div class="search-not-found" style="display: none">
-				<h6>No results found for  “<span class="search-value"></span>”</h6>
-				<p>Check the spelling or use a different word or phrase.</p>
-			</div>
-		</div>
-	</div>
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link
+            rel="preload"
+            href="fonts/TimesNewRoman-Bold.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/TimesNewRoman.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/SuisseIntl-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="wrapper" id="wrapper">
+            <header class="header" id="header">
+    <div class="header-panel">
+        <div class="header-panel-logo">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="logo Design Criteria" />
+            </a>
+        </div>
+        <div class="header-panel-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html#about" class="scroll-action">About Us</a></li>
+                    <li class="menu-item-has-children">
+                        <p>Products</p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="power-supplies.html">
+                                    <span class="sub-item-image">
+                                        <picture>
+                                            <source
+                                                srcset="img/home/solution-1.webp"
+                                                type="image/webp"
+                                            />
+                                            <source
+                                                srcset="img/home/solution-1.png"
+                                                type="image/png"
+                                            />
+                                            <img
+                                                src="img/home/solution-1.png"
+                                                alt="solution image"
+                                            />
+                                        </picture>
+                                    </span>
+                                    <span class="sub-item-title">Power Supplies</span>
+                                    <span class="sub-item-text"
+                                        >Design Criteria, Inc. is the only manufacture of exclusive,
+                                        SMART power supplies for demanding applications.</span
+                                    >
+                                </a>
+                            </li>
+                            <li>
+                                <a href="magnetics.html">
+                                    <span class="sub-item-image">
+                                        <picture>
+                                            <source
+                                                srcset="img/home/solution-2.webp"
+                                                type="image/webp"
+                                            />
+                                            <source
+                                                srcset="img/home/solution-2.png"
+                                                type="image/png"
+                                            />
+                                            <img
+                                                src="img/home/solution-2.png"
+                                                alt="solution image"
+                                            />
+                                        </picture>
+                                    </span>
+                                    <span class="sub-item-title">Magnetics</span>
+                                    <span class="sub-item-text"
+                                        >Design Criteria, Inc. pioneers diverse switching power
+                                        supply components.</span
+                                    >
+                                </a>
+                            </li>
+                            <li>
+                                <a href="iot-remote.html">
+                                    <span class="sub-item-image">
+                                        <picture>
+                                            <source
+                                                srcset="img/home/solution-3.webp"
+                                                type="image/webp"
+                                            />
+                                            <source
+                                                srcset="img/home/solution-3.png"
+                                                type="image/png"
+                                            />
+                                            <img
+                                                src="img/home/solution-3.png"
+                                                alt="solution image"
+                                            />
+                                        </picture>
+                                    </span>
+                                    <span class="sub-item-title">IoT Remote Sensors</span>
+                                    <span class="sub-item-text"
+                                        >We design and manufacture remote sensors for IoT
+                                        applications for smart homes and smart businesses.</span
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="metal.html">MM Pro</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="header-panel-search">
+                <img src="img/icons/search.svg" alt="search icon" />
+            </button>
+            <button type="button" class="btn btn-primary" data-modal-open="#contact-modal">
+                contact us
+            </button>
+            <button class="burger header-panel-burger"><span></span></button>
+        </div>
+    </div>
+    <div class="header-panel-overlay"></div>
+    <div class="header-search">
+        <div class="container">
+            <div class="header-search-form">
+                <form>
+                    <label>
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            class="search-field"
+                            id="searchItem"
+                            autocomplete="off"
+                        />
+                    </label>
+                </form>
+            </div>
+            <div class="header-search-result">
+                <ul class="header-search-list">
+                    <li><a href="#">Magnetics Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#">IoT Lorem ipsum dolor sit amet consectetur.</a></li>
+                    <li><a href="#">Power Supplies Lorem ipsum dolor sit amet consectetur.</a></li>
+                </ul>
+            </div>
+            <div class="search-not-found" style="display: none">
+                <h6>No results found for “<span class="search-value"></span>”</h6>
+                <p>Check the spelling or use a different word or phrase.</p>
+            </div>
+        </div>
+    </div>
 </header>
-	<div data-router-wrapper>
-		<div data-router-view="default">
-			<section
+
+            <div data-router-wrapper>
+                <div data-router-view="default">
+                    <section
     class="section hero hero-main"
     style="background-image: url('../../img/home/hero-bg.webp')"
 >
@@ -141,8 +203,7 @@
         </picture>
     </div>
 </section>
-
-			<section class="section innovating" id="about">
+ <section class="section innovating scrollTo" id="about">
     <div class="container">
         <div class="label-section" data-aos="fade-up">About us</div>
         <div class="innovating-desc">
@@ -192,7 +253,7 @@
     </div>
 </section>
 
-			<section class="section solution">
+                    <section class="section solution">
     <div class="container">
         <div class="section-top">
             <h2 class="title-section h2" data-aos="fade-up">Our Innovative Solutions</h2>
@@ -267,8 +328,7 @@
         </div>
     </div>
 </section>
-
-			<section class="section advantages">
+ <section class="section advantages">
     <div class="container">
         <div class="advantages-wrap">
             <div class="advantages-media" data-aos="fade-up">
@@ -308,8 +368,7 @@
         </div>
     </div>
 </section>
-
-			<section class="section service" style="background-image: url('../../img/home/service-bg.webp')">
+ <section class="section service" style="background-image: url('../../img/home/service-bg.webp')">
     <div class="container">
         <div class="label-section" data-aos="fade-up">Clients</div>
         <div class="service-desc">
@@ -343,8 +402,7 @@
         </div>
     </div>
 </section>
-
-			<section class="section blog">
+ <section class="section blog">
     <div class="container">
         <div class="top-section">
             <div class="title-section" data-aos="fade-up">
@@ -439,7 +497,7 @@
     </div>
 </section>
 
-			<section class="section contact" style="background-image: url('../../img/home/contact-bg.webp')">
+                    <section class="section contact" style="background-image: url('../../img/home/contact-bg.webp')">
     <div class="container">
         <div class="title-section" data-aos="fade-up">
             <div class="h6">Ready to find out more?</div>
@@ -457,9 +515,9 @@
     </div>
 </section>
 
-		</div>
-	</div>
-	<footer class="footer">
+                </div>
+            </div>
+            <footer class="footer">
     <div class="container">
         <div class="footer-top">
             <div class="footer-logo">
@@ -522,7 +580,7 @@
     </div>
 </footer>
 
-	<div class="modal" id="contact-modal">
+            <div class="modal" id="contact-modal">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#contact-modal"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -571,7 +629,7 @@
 		</div>
 	</div>
 </div>
-	<div class="modal" id="thanks">
+            <div class="modal" id="thanks">
 	<div class="modal-bg"></div>
 	<div class="modal-close" data-modal-close="#thanks"></div>
 	<div class="modal-box" data-lenis-prevent>
@@ -592,11 +650,11 @@
 		</div>
 	</div>
 </div>
-</main>
-<script src="js/app.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-	AOS.init({});
-</script>
-</body>
+        </main>
+        <script src="js/app.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({})
+        </script>
+    </body>
 </html>

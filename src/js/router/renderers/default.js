@@ -1,29 +1,28 @@
-import Highway from '@dogstudio/highway';
-import {loadContent} from '../../common/loadContent.js';
-import {initAccordion, initAccordionCore} from '../../modules/accordion/initAccordion.js'
-import {initHeroCarousel} from '../../modules/carousels/heroCarousel.js';
-import {initBlogNav} from '../../modules/blog/initBlogNav.js';
-import {initShare} from '../../modules/blog/initShare.js';
-import {scrollTo} from '../../common/scrollTo.js';
-import {initModal, initModalSearch} from '../../modules/modal/initModal.js';
-
+import Highway from "@dogstudio/highway"
+import { loadContent } from "../../common/loadContent.js"
+import { initAccordion, initAccordionCore } from "../../modules/accordion/initAccordion.js"
+import { initHeroCarousel } from "../../modules/carousels/heroCarousel.js"
+import { initBlogNav } from "../../modules/blog/initBlogNav.js"
+import { initShare } from "../../modules/blog/initShare.js"
+import { scrollTo } from "../../common/scrollTo.js"
+import { initModal, initModalSearch } from "../../modules/modal/initModal.js"
+import { chooseHeaderColor } from "../../common/headerColor.js"
 
 class DefaultRenderer extends Highway.Renderer {
-	onEnter() {
-		initAccordion();
-		initBlogNav();
-		initShare();
-		initAccordionCore();
-		initHeroCarousel();
-		initModalSearch();
-		console.log('Entering on page');
-	}
-	onEnterCompleted() {
-		scrollTo();
-		loadContent();
-		initModal();
-		console.log('Completed Enter on page');
-	}
+    onEnter() {
+        initAccordion()
+        initBlogNav()
+        initShare()
+        initAccordionCore()
+        initHeroCarousel()
+        initModalSearch()
+    }
+    onEnterCompleted() {
+        loadContent()
+        initModal()
+        chooseHeaderColor()
+        scrollTo()
+    }
 }
 
-export default DefaultRenderer;
+export default DefaultRenderer

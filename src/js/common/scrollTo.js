@@ -1,18 +1,22 @@
-import {lenis} from './scroll.js';
+import { lenis } from "./scroll.js"
+
 export const scrollTo = () => {
-	const scrollButtons = document.querySelectorAll('.scroll-action');
-	const heroMain = document.querySelectorAll('.hero-main');
-	if(heroMain.length){
-        if (scrollButtons.length) {
-            scrollButtons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    let box = document.querySelector('.hero');
-                    let width = box.offsetWidth;
-                    let height = box.offsetHeight;
-                    window.scrollTo({ top: height, behavior: 'smooth'});
-                });
-            });
+    // const scrollButtons = document.querySelectorAll(".scroll-action")
+    let target = document.querySelector(".scrollTo")
+
+    // if (scrollButtons.length) {
+    //     scrollButtons.forEach((button) => {
+    //         button.addEventListener("click", () => {
+    //             if (target) {
+    //                 lenis.scrollTo(target, { duration: 1.5 })
+    //             }
+    //         })
+    //     })
+    // }
+
+    if (window.location.hash === "#about") {
+        if (target) {
+            lenis.scrollTo(target, { duration: 1.5 })
         }
     }
-
 }
