@@ -1971,12 +1971,14 @@ svg {
   transition: all 0.3s;
 }
 
-.header img {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(102%) contrast(103%);
+.header .logo img,
+.header .header-panel-search img {
+  filter: invert(0%) sepia(94%) saturate(0%) hue-rotate(185deg) brightness(106%) contrast(106%);
 }
 
-.header.header-dark img {
-  filter: invert(0%) sepia(94%) saturate(0%) hue-rotate(185deg) brightness(106%) contrast(106%);
+.header.header-dark .logo img,
+.header.header-dark .header-panel-search img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(102%) contrast(103%);
 }
 
 .header.hide {
