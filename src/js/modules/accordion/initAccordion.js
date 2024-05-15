@@ -55,6 +55,9 @@ export const initAccordionCore = () => {
                     ease: transition.move.ease,
                 })
                 accordionRow._accordionTween = t
+
+                const isActive = accordionRow.getAttribute("data-active")
+
                 accordionHeader.addEventListener("click", () => {
                     const activeAttr = accordionHeader.parentElement.getAttribute("data-core")
                     const dataCoreImage = document.querySelector(
@@ -77,15 +80,17 @@ export const initAccordionCore = () => {
                         }
                         accordionRows[currentAccordionRow]._accordionTween.reverse()
                     }
-                    console.log(currentAccordionRow)
                     accordionRow.classList.remove("is-active")
                     accordionRow.classList.toggle("is-active")
 
                     t.play()
                     currentAccordionRow = i
                 })
+
+                if (isActive) {
+                    accordionRows[0].querySelector(".advantages-item-title").click()
+                }
             })
-            // accordionRows[0].querySelector('.advantages-item-title').click();
         })
     }
 }

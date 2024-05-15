@@ -13,7 +13,6 @@ class DefaultRenderer extends Highway.Renderer {
         initAccordion()
         initBlogNav()
         initShare()
-        initAccordionCore()
         initHeroCarousel()
         initModalSearch()
     }
@@ -22,6 +21,7 @@ class DefaultRenderer extends Highway.Renderer {
         initModal()
         chooseHeaderColor()
         scrollTo()
+        initAccordionCore()
     }
 }
 
