@@ -61,10 +61,14 @@ export const initAccordionCore = () => {
                         "[data-core-image='" + activeAttr + "'"
                     )
                     var elems = document.querySelectorAll(".advantages-image")
+
                     ;[].forEach.call(elems, function (el) {
                         el.classList.remove("is-active")
                     })
-                    dataCoreImage.classList.add("is-active")
+
+                    if (dataCoreImage) {
+                        dataCoreImage.classList.add("is-active")
+                    }
                     if (currentAccordionRow !== null) {
                         accordionRows[currentAccordionRow].classList.toggle("is-active")
                         if (currentAccordionRow === i) {
@@ -73,6 +77,7 @@ export const initAccordionCore = () => {
                         }
                         accordionRows[currentAccordionRow]._accordionTween.reverse()
                     }
+                    console.log(currentAccordionRow)
                     accordionRow.classList.remove("is-active")
                     accordionRow.classList.toggle("is-active")
 
