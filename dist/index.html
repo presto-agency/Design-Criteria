@@ -44,14 +44,18 @@
             <header class="header" id="header">
     <div class="header-panel">
         <div class="header-panel-logo">
-            <a href="/" class="logo">
+            <a href="index.html" class="logo">
                 <img src="img/logo.svg" alt="logo Design Criteria" />
             </a>
         </div>
         <div class="header-panel-nav">
             <nav>
                 <ul>
-                    <li><a href="index.html#about" class="scroll-action">About Us</a></li>
+                    <li>
+                        <a href="index.html#about" class="scroll-action" data-router-disabled
+                            >About Us</a
+                        >
+                    </li>
                     <li class="menu-item-has-children">
                         <p>Products</p>
                         <ul class="sub-menu">
@@ -191,7 +195,9 @@
                 and precision power electronics to meet unique and extreme customer requirements.
             </div>
             <div class="hero-link" data-load-order="4">
-                <a href="#solution" class="btn btn-secondary">More Innovative Solutions</a>
+                <a href="#solution" data-router-disabled class="btn btn-secondary scroll-action"
+                    >More Innovative Solutions</a
+                >
             </div>
         </div>
     </div>
@@ -203,7 +209,7 @@
         </picture>
     </div>
 </section>
- <section class="section innovating scrollTo" id="about">
+ <section class="section innovating" id="about">
     <div class="container">
         <div class="label-section" data-aos="fade-up">About us</div>
         <div class="innovating-desc">
