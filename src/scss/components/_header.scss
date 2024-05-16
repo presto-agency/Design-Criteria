@@ -10,14 +10,6 @@
     border-bottom: 1rem solid var(--color-white-20);
     transition: all 0.3s;
 
-    &.header-dark {
-        .logo img,
-        .header-panel-search img {
-            filter: invert(37%) sepia(4%) saturate(3934%) hue-rotate(185deg) brightness(81%)
-                contrast(86%);
-        }
-    }
-
     &.hide {
         opacity: 0;
     }
