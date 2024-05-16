@@ -1971,6 +1971,14 @@ svg {
   transition: all 0.3s;
 }
 
+.header .dark-logo {
+  display: none;
+}
+
+.header .white-logo {
+  display: block;
+}
+
 .header.hide {
   opacity: 0;
 }
@@ -2346,6 +2354,14 @@ svg {
 
 .header.header-dark {
   border-color: var(--color-gray-300);
+}
+
+.header.header-dark .dark-logo {
+  display: block;
+}
+
+.header.header-dark .white-logo {
+  display: none;
 }
 
 .header.header-dark.active-search {

@@ -10,6 +10,13 @@
     border-bottom: 1rem solid var(--color-white-20);
     transition: all 0.3s;
 
+    .dark-logo {
+        display: none;
+    }
+    .white-logo {
+        display: block;
+    }
+
     &.hide {
         opacity: 0;
     }
@@ -341,8 +348,17 @@
             text-transform: uppercase;
         }
     }
+
     &.header-dark {
         border-color: var(--color-gray-300);
+
+        .dark-logo {
+            display: block;
+        }
+        .white-logo {
+            display: none;
+        }
+
         &.active-search {
             background-color: var(--color-white);
         }
