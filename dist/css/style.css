@@ -3256,6 +3256,73 @@ svg {
   opacity: 0.8;
 }
 
+.privacy-policy__hero {
+  background: var(--color-secondary-1);
+  padding: 135rem 80rem 64rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.privacy-policy__hero-time {
+  font: var(--font-body-b);
+  color: var(--color-primary-1);
+  margin-bottom: 16rem;
+}
+
+.privacy-policy__hero-title {
+  margin-bottom: 24rem;
+}
+
+.privacy-policy__hero-desc {
+  font: var(--font-body-m);
+  width: 768rem;
+  margin: auto;
+}
+
+.privacy-policy .container {
+  padding: 104rem 288rem;
+}
+
+.privacy-policy__info {
+  display: flex;
+  flex-direction: column;
+  gap: 48rem;
+}
+
+.privacy-policy__info-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  color: var(--color-gray-700);
+}
+
+.privacy-policy__info-title.h4 {
+  font-weight: 700;
+  margin-bottom: 24rem;
+}
+
+.privacy-policy__info-title.h5,
+.accordion-md .privacy-policy__info-title.accordion-item-title {
+  margin-bottom: 16rem;
+}
+
+.privacy-policy__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  font: var(--font-body-m);
+  color: var(--color-gray-700);
+}
+
+.privacy-policy__info-text ol {
+  padding-left: 16rem;
+}
+
+.privacy-policy__info-text ol li {
+  list-style: auto;
+  padding-left: 6rem;
+}
+
 .hero {
   background: var(--color-secondary-1);
   top: 0;
@@ -8910,6 +8977,45 @@ svg {
   .not-found-link .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .privacy-policy__hero {
+    padding: 99rem 24rem 80rem;
+  }
+
+  .privacy-policy__hero-time {
+    font: var(--font-body-u);
+  }
+
+  .privacy-policy__hero-desc {
+    font: var(--font-body-m);
+    width: 100%;
+  }
+
+  .privacy-policy .container {
+    padding: 80rem 24rem;
+  }
+
+  .privacy-policy__info {
+    gap: 32rem;
+  }
+
+  .privacy-policy__info-desc {
+    font-weight: 700;
+  }
+
+  .privacy-policy__info-title.h4 {
+    margin-bottom: 16rem;
+  }
+
+  .privacy-policy__info-title.h5,
+  .accordion-md .privacy-policy__info-title.accordion-item-title {
+    font-weight: 700;
+  }
+
+  .privacy-policy__info-text {
+    gap: 12rem;
+    font: var(--font-body-m-mobile);
   }
 
   .hero {

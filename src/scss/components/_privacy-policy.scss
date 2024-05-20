@@ -1,0 +1,119 @@
+.privacy-policy {
+    &__hero {
+        background: var(--color-secondary-1);
+        padding: 135rem 80rem 64rem;
+        text-align: center;
+        color: var(--color-white);
+
+        &-time {
+            font: var(--font-body-b);
+            color: var(--color-primary-1);
+            margin-bottom: 16rem;
+        }
+
+        &-title {
+            margin-bottom: 24rem;
+        }
+
+        &-desc {
+            font: var(--font-body-m);
+            width: 768rem;
+            margin: auto;
+        }
+    }
+
+    .container {
+        padding: 104rem 288rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 48rem;
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            gap: 24rem;
+            color: var(--color-gray-700);
+        }
+
+        &-box {
+        }
+
+        &-title {
+            &.h4 {
+                font-weight: 700;
+                margin-bottom: 24rem;
+            }
+            &.h5 {
+                margin-bottom: 16rem;
+            }
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 24rem;
+            font: var(--font-body-m);
+            color: var(--color-gray-700);
+
+            ol {
+                padding-left: 16rem;
+
+                li {
+                    list-style: auto;
+                    padding-left: 6rem;
+                }
+            }
+        }
+    }
+}
+
+@include maxWidth($sm) {
+    .privacy-policy {
+        &__hero {
+            padding: 99rem 24rem 80rem;
+
+            &-time {
+                font: var(--font-body-u);
+            }
+            &-title {
+            }
+
+            &-desc {
+                font: var(--font-body-m);
+                width: 100%;
+            }
+        }
+
+        .container {
+            padding: 80rem 24rem;
+        }
+
+        &__info {
+            gap: 32rem;
+
+            &-desc {
+                font-weight: 700;
+            }
+
+            &-box {
+            }
+
+            &-title {
+                &.h4 {
+                    margin-bottom: 16rem;
+                }
+                &.h5 {
+                    font-weight: 700;
+                }
+            }
+
+            &-text {
+                gap: 12rem;
+                font: var(--font-body-m-mobile);
+            }
+        }
+    }
+}

@@ -7,6 +7,7 @@ import { initShare } from "../../modules/blog/initShare.js"
 import { scrollTo } from "../../common/scrollTo.js"
 import { initModal, initModalSearch } from "../../modules/modal/initModal.js"
 import { chooseHeaderColor } from "../../common/headerColor.js"
+import { currentDate } from "../../common/currentDate.js"
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
@@ -15,6 +16,7 @@ class DefaultRenderer extends Highway.Renderer {
         initShare()
         initHeroCarousel()
         initModalSearch()
+        currentDate()
     }
     onEnterCompleted() {
         loadContent()
