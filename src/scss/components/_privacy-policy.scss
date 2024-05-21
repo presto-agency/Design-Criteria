@@ -71,7 +71,7 @@
 }
 
 @include maxWidth($sm) {
-    .privacy-policy {
+    .section-privacy-policy {
         &__hero {
             padding: 99rem 24rem 80rem;
 

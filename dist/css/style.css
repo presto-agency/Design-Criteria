@@ -8980,45 +8980,45 @@ svg {
     text-align: center;
   }
 
-  .privacy-policy__hero {
+  .section-privacy-policy__hero {
     padding: 99rem 24rem 80rem;
   }
 
-  .privacy-policy__hero-time {
+  .section-privacy-policy__hero-time {
     font: var(--font-body-u);
   }
 
-  .privacy-policy__hero-desc {
+  .section-privacy-policy__hero-desc {
     font: var(--font-body-m);
     width: 100%;
   }
 
-  .privacy-policy .container {
+  .section-privacy-policy .container {
     padding: 80rem 24rem;
   }
 
-  .privacy-policy__info blockquote {
+  .section-privacy-policy__info blockquote {
     font: var(--font-h5-mobile);
     font-weight: 700;
   }
 
-  .privacy-policy__info h2 {
+  .section-privacy-policy__info h2 {
     margin: 32rem 0 16rem;
     font: var(--font-h4-mobile);
     font-weight: 700;
   }
 
-  .privacy-policy__info h3 {
+  .section-privacy-policy__info h3 {
     margin: 32rem 0 16rem;
     font: var(--font-h5-mobile);
     font-weight: 700;
   }
 
-  .privacy-policy__info p {
+  .section-privacy-policy__info p {
     font: var(--font-body-m-mobile);
   }
 
-  .privacy-policy__info p:not(:last-of-type) {
+  .section-privacy-policy__info p:not(:last-of-type) {
     margin-bottom: 12rem;
   }
 
