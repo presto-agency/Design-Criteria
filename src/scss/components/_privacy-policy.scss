@@ -31,44 +31,39 @@
     }
 
     &__info {
-        display: flex;
-        flex-direction: column;
-        gap: 48rem;
-
-        &-desc {
-            display: flex;
-            flex-direction: column;
-            gap: 24rem;
+        blockquote {
+            margin-bottom: 24rem;
             color: var(--color-gray-700);
         }
 
-        &-box {
+        h2 {
+            font: var(--font-h4);
+            font-weight: 700;
+            margin: 48rem 0 24rem;
         }
 
-        &-title {
-            &.h4 {
-                font-weight: 700;
-                margin-bottom: 24rem;
-            }
-            &.h5 {
-                margin-bottom: 16rem;
-            }
+        h3 {
+            font: var(--font-h5);
+            font-weight: 700;
+            margin: 48rem 0 16rem;
         }
 
-        &-text {
-            display: flex;
-            flex-direction: column;
-            gap: 24rem;
+        p {
             font: var(--font-body-m);
             color: var(--color-gray-700);
 
-            ol {
-                padding-left: 16rem;
+            &:not(:last-of-type) {
+                margin-bottom: 24rem;
+            }
+        }
 
-                li {
-                    list-style: auto;
-                    padding-left: 6rem;
-                }
+        ol {
+            color: var(--color-gray-700);
+            padding-left: 16rem;
+
+            li {
+                list-style: auto;
+                padding-left: 6rem;
             }
         }
     }
@@ -82,8 +77,6 @@
             &-time {
                 font: var(--font-body-u);
             }
-            &-title {
-            }
 
             &-desc {
                 font: var(--font-body-m);
@@ -96,27 +89,21 @@
         }
 
         &__info {
-            gap: 32rem;
-
-            &-desc {
+            blockquote {
                 font-weight: 700;
             }
 
-            &-box {
+            h2,
+            h3 {
+                margin: 32rem 0 16rem;
             }
 
-            &-title {
-                &.h4 {
-                    margin-bottom: 16rem;
-                }
-                &.h5 {
-                    font-weight: 700;
-                }
-            }
-
-            &-text {
-                gap: 12rem;
+            p {
                 font: var(--font-body-m-mobile);
+
+                &:not(:last-of-type) {
+                    margin-bottom: 12rem;
+                }
             }
         }
     }
