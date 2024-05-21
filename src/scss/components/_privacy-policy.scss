@@ -5,10 +5,11 @@
         text-align: center;
         color: var(--color-white);
 
-        &-time {
+        &-date {
             font: var(--font-body-b);
             color: var(--color-primary-1);
             margin-bottom: 16rem;
+            font-family: "Times New Roman", sans-serif;
         }
 
         &-title {
@@ -23,7 +24,10 @@
     }
 
     .container {
+        max-width: 100%;
         padding: 104rem 288rem;
+        margin: 0;
+        background: var(--color-gray-200);
     }
 
     &__info {

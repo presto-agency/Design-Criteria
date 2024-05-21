@@ -3263,10 +3263,11 @@ svg {
   color: var(--color-white);
 }
 
-.privacy-policy__hero-time {
+.privacy-policy__hero-date {
   font: var(--font-body-b);
   color: var(--color-primary-1);
   margin-bottom: 16rem;
+  font-family: "Times New Roman", sans-serif;
 }
 
 .privacy-policy__hero-title {
@@ -3280,7 +3281,10 @@ svg {
 }
 
 .privacy-policy .container {
+  max-width: 100%;
   padding: 104rem 288rem;
+  margin: 0;
+  background: var(--color-gray-200);
 }
 
 .privacy-policy__info {
