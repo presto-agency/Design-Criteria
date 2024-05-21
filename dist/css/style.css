@@ -3289,6 +3289,7 @@ svg {
 
 .privacy-policy__info blockquote {
   margin-bottom: 24rem;
+  font: var(--font-h5);
   color: var(--color-gray-700);
 }
 
@@ -8997,12 +8998,20 @@ svg {
   }
 
   .privacy-policy__info blockquote {
+    font: var(--font-h5-mobile);
     font-weight: 700;
   }
 
-  .privacy-policy__info h2,
+  .privacy-policy__info h2 {
+    margin: 32rem 0 16rem;
+    font: var(--font-h4-mobile);
+    font-weight: 700;
+  }
+
   .privacy-policy__info h3 {
     margin: 32rem 0 16rem;
+    font: var(--font-h5-mobile);
+    font-weight: 700;
   }
 
   .privacy-policy__info p {

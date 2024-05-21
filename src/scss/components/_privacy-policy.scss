@@ -33,6 +33,7 @@
     &__info {
         blockquote {
             margin-bottom: 24rem;
+            font: var(--font-h5);
             color: var(--color-gray-700);
         }
 
@@ -90,12 +91,20 @@
 
         &__info {
             blockquote {
+                font: var(--font-h5-mobile);
                 font-weight: 700;
             }
 
-            h2,
+            h2 {
+                margin: 32rem 0 16rem;
+                font: var(--font-h4-mobile);
+                font-weight: 700;
+            }
+
             h3 {
                 margin: 32rem 0 16rem;
+                font: var(--font-h5-mobile);
+                font-weight: 700;
             }
 
             p {
