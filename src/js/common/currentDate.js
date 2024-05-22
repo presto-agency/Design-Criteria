@@ -17,5 +17,8 @@ export const currentDate = () => {
     const dateStr = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`
 
     const formattedTime = `Current as of ${dateStr}`
-    document.getElementById("current-date").textContent = formattedTime
+    const dateElement = document.getElementById("current-date")
+    if (dateElement) {
+        dateElement.textContent = formattedTime
+    }
 }
