@@ -228,7 +228,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 22rem;
     }
     &-nav {
         .splide__arrows {
@@ -265,6 +264,12 @@
     }
     &.hero-metal {
         padding: 120rem 0 105rem;
+
+        .hero-text {
+            max-width: 864rem;
+            margin-bottom: 64rem;
+            color: var(--color-gray-300);
+        }
     }
 }
 .hero-post {

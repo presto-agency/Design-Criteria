@@ -3592,7 +3592,6 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 22rem;
 }
 
 .hero-nav .splide__arrows {
@@ -3635,6 +3634,12 @@ svg {
 
 .hero.hero-metal {
   padding: 120rem 0 105rem;
+}
+
+.hero.hero-metal .hero-text {
+  max-width: 864rem;
+  margin-bottom: 64rem;
+  color: var(--color-gray-300);
 }
 
 .hero-post {
