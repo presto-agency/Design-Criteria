@@ -3338,14 +3338,14 @@ svg {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
   z-index: 2;
 }
 
 .hero-media {
   position: absolute;
-  bottom: 0;
+  bottom: -80rem;
   right: 0;
   width: 874rem;
   height: 673rem;
@@ -3362,12 +3362,19 @@ svg {
 }
 
 .hero-desc {
-  max-width: 560rem;
+  max-width: 960rem;
 }
 
 .hero-subtitle {
   color: var(--color-white);
   margin-bottom: 12rem;
+  width: 430rem;
+}
+
+.hero-subtitle.h5,
+.accordion-md .hero-subtitle.accordion-item-title {
+  margin-bottom: 16rem;
+  color: var(--color-gray-300);
 }
 
 .hero-title {
@@ -3380,11 +3387,12 @@ svg {
   color: var(--color-gray-300);
   font: var(--font-body-m);
   margin-bottom: 48rem;
-  max-width: 430rem;
+  max-width: 400rem;
 }
 
 .hero.hero-main {
   position: sticky;
+  height: 100vh;
   z-index: 2;
 }
 

@@ -11,13 +11,13 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         position: relative;
         z-index: 2;
     }
     &-media {
         position: absolute;
-        bottom: 0;
+        bottom: -80rem;
         right: 0;
         width: 874rem;
         height: 673rem;
@@ -31,12 +31,18 @@
         }
     }
     &-desc {
-        max-width: 560rem;
+        max-width: 960rem;
     }
     &-subtitle {
         color: var(--color-white);
         margin-bottom: 12rem;
+        width: 430rem;
     }
+    &-subtitle.h5 {
+        margin-bottom: 16rem;
+        color: var(--color-gray-300);
+    }
+
     &-title {
         color: var(--color-white);
         margin-bottom: 26rem;
@@ -46,12 +52,13 @@
         color: var(--color-gray-300);
         font: var(--font-body-m);
         margin-bottom: 48rem;
-        max-width: 430rem;
+        max-width: 400rem;
     }
     &-link {
     }
     &.hero-main {
         position: sticky;
+        height: 100vh;
         z-index: 2;
         &:before,
         &:after {
