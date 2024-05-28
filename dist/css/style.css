@@ -3393,7 +3393,7 @@ svg {
 .hero.hero-main {
   position: sticky;
   height: 100vh;
-  z-index: 2;
+  overflow: hidden;
 }
 
 .hero.hero-main:before,
