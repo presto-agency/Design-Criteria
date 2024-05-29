@@ -3652,7 +3652,7 @@ svg {
 
 .hero-post {
   background-color: var(--color-gray-200);
-  padding-bottom: 64rem;
+  padding-bottom: 0;
 }
 
 .hero-post .post-text {
@@ -3665,7 +3665,8 @@ svg {
 }
 
 .post-desc .hero-blog-title {
-  margin-bottom: 64rem;
+  padding-bottom: 64rem;
+  margin-bottom: 0;
 }
 
 .post-media {
@@ -3673,6 +3674,7 @@ svg {
   height: 640rem;
   overflow: hidden;
   border-radius: 4rem;
+  padding-bottom: 64rem;
 }
 
 .post-media img {
@@ -3789,6 +3791,14 @@ svg {
 .post-content-desc {
   width: 100%;
   max-width: 864rem;
+}
+
+.post-content-desc .post-text {
+  margin-bottom: 48rem;
+}
+
+.post-content-desc .post-desc hr {
+  margin-top: 0;
 }
 
 .post-content-desc h1,
