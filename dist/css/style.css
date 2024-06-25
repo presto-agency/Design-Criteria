@@ -3314,13 +3314,13 @@ svg {
   margin-bottom: 24rem;
 }
 
-.section-privacy-policy__info ol {
+.section-privacy-policy__info ul {
   color: var(--color-gray-700);
   padding-left: 16rem;
 }
 
-.section-privacy-policy__info ol li {
-  list-style: auto;
+.section-privacy-policy__info ul li {
+  list-style: disc;
   padding-left: 6rem;
 }
 
