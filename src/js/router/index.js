@@ -14,6 +14,16 @@ export const router = new Highway.Core({
     },
 })
 
+const updateActiveLink = () => {
+    const links = document.querySelectorAll(".nav-link")
+    links.forEach((link) => {
+        link.classList.remove("active")
+        if (link.href === window.location.href) {
+            link.classList.add("active")
+        }
+    })
+}
+
 router.on("NAVIGATE_IN", () => {
     updateScroll()
 })
@@ -21,4 +31,5 @@ router.on("NAVIGATE_IN", () => {
 router.on("NAVIGATE_OUT", () => {
     migrateMobileNavigation()
     headerHide()
+    updateActiveLink()
 })
