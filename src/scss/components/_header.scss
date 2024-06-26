@@ -85,8 +85,11 @@
                                 visibility: visible;
                                 a {
                                     background-color: transparent;
-                                    &:hover {
+
+                                    &:hover,
+                                    &.active {
                                         background-color: var(--color-primary-1);
+
                                         .sub {
                                             &-item {
                                                 &-image {
@@ -100,6 +103,9 @@
                                                 }
                                             }
                                         }
+                                    }
+                                    &.active {
+                                        cursor: default;
                                     }
                                 }
                             }
@@ -176,8 +182,12 @@
                         text-transform: uppercase;
                         font: var(--font-body-m-b);
                         color: var(--color-white);
-                        &:hover {
+                        &:hover,
+                        &.active {
                             background-color: var(--color-primary-1);
+                        }
+                        &.active {
+                            cursor: default;
                         }
                     }
                     p {
@@ -377,8 +387,13 @@
                             a,
                             p {
                                 color: var(--color-secondary-1);
-                                &:hover {
+                                &:hover,
+                                &.active {
+                                    background: var(--color-primary-1);
                                     color: var(--color-white);
+                                }
+                                &.active {
+                                    cursor: default;
                                 }
                             }
                             &.menu-item-has-children {

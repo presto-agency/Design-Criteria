@@ -52,15 +52,13 @@
         p {
             font: var(--font-body-m);
             color: var(--color-gray-700);
-
-            &:not(:last-of-type) {
-                margin-bottom: 24rem;
-            }
+            margin-bottom: 24rem;
         }
 
         ul {
             color: var(--color-gray-700);
             padding-left: 16rem;
+            margin-bottom: 24rem;
 
             li {
                 list-style: disc;

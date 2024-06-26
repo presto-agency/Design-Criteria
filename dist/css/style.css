@@ -2064,20 +2064,28 @@ svg {
   background-color: transparent;
 }
 
-.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover {
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover,
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a.active {
   background-color: var(--color-primary-1);
 }
 
-.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-image {
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-image,
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a.active .sub-item-image {
   background-color: var(--color-gray-300);
 }
 
-.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-title {
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-title,
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a.active .sub-item-title {
   color: var(--color-white);
 }
 
-.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-text {
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a:hover .sub-item-text,
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a.active .sub-item-text {
   color: var(--color-white);
+}
+
+.header-panel-nav ul li.menu-item-has-children:hover .sub-menu a.active {
+  cursor: default;
 }
 
 .header-panel-nav ul li .sub-menu {
@@ -2159,8 +2167,15 @@ svg {
 }
 
 .header-panel-nav ul li a:hover,
-.header-panel-nav ul li p:hover {
+.header-panel-nav ul li a.active,
+.header-panel-nav ul li p:hover,
+.header-panel-nav ul li p.active {
   background-color: var(--color-primary-1);
+}
+
+.header-panel-nav ul li a.active,
+.header-panel-nav ul li p.active {
+  cursor: default;
 }
 
 .header-panel-nav ul li p {
@@ -2383,8 +2398,16 @@ svg {
 }
 
 .header.header-dark .header-panel-nav ul li a:hover,
-.header.header-dark .header-panel-nav ul li p:hover {
+.header.header-dark .header-panel-nav ul li a.active,
+.header.header-dark .header-panel-nav ul li p:hover,
+.header.header-dark .header-panel-nav ul li p.active {
+  background: var(--color-primary-1);
   color: var(--color-white);
+}
+
+.header.header-dark .header-panel-nav ul li a.active,
+.header.header-dark .header-panel-nav ul li p.active {
+  cursor: default;
 }
 
 .header.header-dark .header-panel-nav ul li.menu-item-has-children a:after,
@@ -3115,8 +3138,13 @@ svg {
   color: var(--color-white);
 }
 
-.footer-list a:hover {
+.footer-list a:hover,
+.footer-list a.active {
   color: var(--color-primary-1);
+}
+
+.footer-list a.active {
+  cursor: default;
 }
 
 .footer-bottom {
@@ -3308,15 +3336,13 @@ svg {
 .section-privacy-policy__info p {
   font: var(--font-body-m);
   color: var(--color-gray-700);
-}
-
-.section-privacy-policy__info p:not(:last-of-type) {
   margin-bottom: 24rem;
 }
 
 .section-privacy-policy__info ul {
   color: var(--color-gray-700);
   padding-left: 16rem;
+  margin-bottom: 24rem;
 }
 
 .section-privacy-policy__info ul li {
@@ -4176,6 +4202,13 @@ svg {
 
 .advantages-media {
   position: relative;
+  width: 640rem;
+  height: 448rem;
+}
+
+.advantages-media img {
+  width: 100%;
+  height: 100%;
 }
 
 .advantages-image {
@@ -4266,7 +4299,7 @@ svg {
 }
 
 .advantages.advantages-product {
-  padding: 104rem 0 70rem;
+  padding: 104rem 0;
   background-color: var(--color-white);
 }
 
