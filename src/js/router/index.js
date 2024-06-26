@@ -18,18 +18,19 @@ const updateActiveLink = () => {
     const links = document.querySelectorAll(".nav-link")
     links.forEach((link) => {
         link.classList.remove("active")
-        if (link.href === window.location.href) {
+        if (link.pathname === window.location.pathname) {
             link.classList.add("active")
         }
     })
 }
+updateActiveLink()
 
 router.on("NAVIGATE_IN", () => {
+    updateActiveLink()
     updateScroll()
 })
 
 router.on("NAVIGATE_OUT", () => {
     migrateMobileNavigation()
     headerHide()
-    updateActiveLink()
 })
